@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trilha Alpha EdTech Canvas" />
+    <meta property="og:description" content="Exercícios da Alpha EdTech - canvas" />
+    <meta property="og:image" content="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F233338003_1474787772884019_855391963800207351_n.jpg%3Fccb%3D11-4%26oh%3D82579ee5aa63befe40e8568121373c24%26oe%3D616F117C&t=l&u=551239231360-1629409725%40g.us&i=1631229617&n=WdXBesqFkwDT%2F3E7zWPy27Uqj5EojK4u%2B38S%2B4ncvHc%3D" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+</head>
+<body onload="bandeiras();">
+    <div>
+        <button><a href="/index.html">Voltar</a></button>
+    </div>
+    <main>
+        <br /><br /><br />
+        <canvas id="nomeImagem" width="900" height="650"></canvas>
+    </main>
+</body>
+<script>
+    function bandeiras(){
+        var ctx = document.getElementById('nomeImagem').getContext('2d');
+
+
+
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(0,0,900,650)
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(30,30,840,590)
+
+        ctx.fillStyle = 'rgb(0, 178, 0)';
+        ctx.fillRect(100, 60, 700, 400);
+
+
+
+        //  triangulo parte direita
+        ctx.fillStyle = 'yellow';
+        ctx.beginPath();
+        ctx.moveTo(450, 110);
+        ctx.lineTo(450, 410);
+        ctx.lineTo(710, 260);
+        ctx.fill();
+
+        //  triangulo parte esquerda
+
+        ctx.beginPath();
+        ctx.moveTo(450, 110);
+        ctx.lineTo(450, 410);
+        ctx.lineTo(180, 260);
+        ctx.fill();
+
+        //circulo
+        ctx.fillStyle ='darkblue';
+        ctx.beginPath();
+        ctx.arc(450, 260, 100, 0, 2 * 3.14);
+        ctx.fill();
+
+
+        ctx.fillStyle = 'green';
+        ctx.beginPath();
+        ctx.moveTo(100,60);
+        ctx.lineTo(100,460);
+        ctx.lineTo(800,60);
+        ctx.fill();
+
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.moveTo(333.333,60);
+        ctx.lineTo(333.333,326.666);
+        ctx.lineTo(800,60);
+        ctx.fill();
+
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.moveTo(566.666,60);
+        ctx.lineTo(566.666,193.333);
+        ctx.lineTo(800,60);
+        ctx.fill();
+
+        ctx.strokeStyle = 'rgb(192,192,192,80)';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(100,460);
+        ctx.lineTo(800,60);
+        ctx.stroke();
+
+        ctx.shadowOffsetX = 3;
+        ctx.shadowOffsetY = 2;
+        ctx.shadowBlur = 2;
+        ctx.shadowColor = 'rgba(230,230,230,0.5)';
+
+        ctx.font = '60px Palatino Linotype';
+        ctx.fillStyle = 'green';
+        ctx.fillText('Ivan', 260, 510);
+        ctx.fillStyle = 'white'
+        ctx.fillText('Ramalho', 330, 560);
+        ctx.fillStyle = 'red'
+        ctx.fillText('Tonial', 520, 610);
+    }
+</script>    
+</html>

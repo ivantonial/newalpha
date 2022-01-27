@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Juros</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Calculo juros" />
+    <meta property="og:description" content="Calculo Juros de contas a receber" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Controle de contas a receber</h1>
+    </header>
+
+    <main>
+        <section>
+            <fieldset>
+                <legend>Insira os dados do cliente</legend>
+                <form id="clientDataForm">
+                    <div>
+                        <label for="clientName">Nome do Cliente:</label>
+                        <input type="text" name="clientName" id="clientName" maxlength="50" size="50px"
+                            placeholder="Digite o nome aqui" />
+                        <label for="dueDate">Data de Vencimento:</label>
+                        <input type="date" name="dueDate" id="dueDate" />
+                    </div>
+                    <div class="priceAndButton">
+                        <div class="price">
+                            <label for="purchaseAmount">Valor da compra:</label>
+                            <input type="text" name="purchaseAmount" id="purchaseAmount" placeholder="R$ 0,00"
+                                maxlength="12" size="12px" />
+                        </div>
+                        <button type="button" onclick="AddNewPurchase()">Inserir</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <table id="tableData">
+                <thead>
+                    <tr>
+                        <th colspan="5">
+                            <h2 class="tableTitle">Tabela de contas a receber cadastradas</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Data de Vencimento</th>
+                        <th>Valor da Compra</th>
+                        <th>Juros</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+            <div class="divBtn">
+                <button type="button" onclick="feesCalculator()">Calcular Juros</button>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/carro-esporte1.png" type="image/x-icon">
+    <title>Corrida</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - calculator" />
+    <meta property="og:description" content="Estudo de Operações Matemáticas - Calculadora simples" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <H1 class="title">Jogo de Corrida</H1>
+    </header>
+
+    <main>
+        <section class="choice">
+            <div class="class">
+                <h2>Escolha as cofingurações</h2>
+                <p>Cada jogador pode gerar até 5 carrinhos</p>
+            </div>
+            <form>
+                <p>Quantos carrinhos deseja gerar?</p>
+                <div class="qtCars">
+                    <div>
+                        <input type="number" id="carsPedro" name="cars" min="1" max="5" style="margin-left: 10px;" />
+                        <label for="carsPedro">Pedro</label>
+                    </div>
+                    <div>
+                        <input type="number" id="carsJuca" name="cars" min="1" max="5" />
+                        <label for="carsJuca">Juca</label>
+                    </div>
+                    <div>
+                        <input type="number" id="carsEdna" name="cars" min="1" max="5" />
+                        <label for="carsEdna">Edna</label>
+                    </div>
+                </div>
+                <button type="button" id="raceButton" onclick="raceResult()">Gerar Carrinhos</button>
+            </form>
+            <form>
+                <p>Escolha o carro que deseja utilizar:</p>
+                <p>As informações de cada carro são disponibilizadas na seguinte ordem:</p>
+                <p>Tipo de carro, Vel. Máx (km/h), Vel. Mín. (km/h) e derrapagem.</p>
+                <div class="allCarsOptions">
+                    <div>
+                        <p class="pedroCar">Carros do Pedro:</p>
+                        <div class="allCarsOptionsPlayers">
+                            <div class="carChoice">
+                                <div>
+                                    <input type="radio" id="carPedro1" name="carsPedro" value="1" />
+                                    <label for="carPedro1">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carPedro2" name="carsPedro" value="2" />
+                                    <label for="carPedro2">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carPedro3" name="carsPedro" value="3" />
+                                    <label for="carPedro3">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carPedro4" name="carsPedro" value="4" />
+                                    <label for="carPedro4">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carPedro5" name="carsPedro" value="5" />
+                                    <label for="carPedro5">Popular - 190 - 130 - 2%</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="jucaCar">Carros do Juca:</p>
+                        <div class="allCarsOptionsPlayers">
+                            <div class="carChoice">
+                                <div>
+                                    <input type="radio" id="carJuca1" name="carsJuca" value="1" />
+                                    <label for="carJuca1">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carJuca2" name="carsJuca" value="2" />
+                                    <label for="carJuca2">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carJuca3" name="carsJuca" value="3" />
+                                    <label for="carJuca3">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carJuca4" name="carsJuca" value="4" />
+                                    <label for="carJuca4">Popular - 190 - 130 - 2%</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="carJuca5" name="carsJuca" value="5" />
+                                    <label for="carJuca5">Popular - 190 - 130 - 2%</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="ednaCar">Carros da Edna:</p>
+                            <div class="allCarsOptionsPlayers">
+                                <div class="carChoice">
+                                    <div>
+                                        <input type="radio" id="carEdna1" name="carsEdna" value="1" />
+                                        <label for="carEdna1">Popular - 190 - 130 - 2%</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="carEdna2" name="carsEdna" value="2" />
+                                        <label for="carEdna2">Popular - 190 - 130 - 2%</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="carEdna3" name="carsEdna" value="3" />
+                                        <label for="carEdna3">Popular - 190 - 130 - 2%</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="carEdna4" name="carsEdna" value="4" />
+                                        <label for="carEdna4">Popular - 190 - 130 - 2%</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="carEdna5" name="carsEdna" value="5" />
+                                        <label for="carEdna5">Popular - 190 - 130 - 2%</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="raceButton" onclick="raceResult()">Escolher Carrinho</button>
+            </form>
+            <form>
+                <div>
+                    <input type="radio" id="fast" name="race" value="10" />
+                    <label for="fast">Corrida Rápida (10 voltas)</label>
+                </div>
+                <div>
+                    <input type="radio" id="grandPrix" name="race" value="70" />
+                    <label for="grandPrix">Grande Prêmio (70 voltas)</label>
+                </div>
+                <div>
+                    <input type="radio" id="endurance" name="race" value="160" />
+                    <label for="endurance">Enduro (160 voltas)</label>
+                </div>
+                <button type="button" id="raceButton" onclick="raceResult()">Gerar Resultado</button>
+            </form>
+            <div id="divResult" class="divResult">
+                <p id="resultLaps" class="result">
+
+                </p>
+                <p id="resultWinner" class="result">
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

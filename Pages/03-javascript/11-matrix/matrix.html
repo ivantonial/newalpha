@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - Jogo da velha" />
+    <meta property="og:description" content="Estudo de Array - Jogo da velha" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Jogo da velha</h1>
+    </header>
+
+    <main>
+        <div class="lineOne">
+            <button id="x11" onclick=check(11) type="button"></button><button id="x12" onclick=check(12)
+                type="button"></button><button id="x13" onclick=check(13) type="button"></button>
+        </div>
+        <div class="lineTwo">
+            <button id="x21" onclick=check(21) type="button"></button><button id="x22" onclick=check(22)
+                type="button"></button><button id="x23" onclick=check(23) type="button"></button>
+        </div>
+        <div class="lineThree">
+            <button id="x31" onclick=check(31) type="button"></button><button id="x32" onclick=check(32)
+                type="button"></button><button id="x33" onclick=check(33) type="button"></button>
+        </div>
+        <div class="final">
+            <p id="winner"></p>
+            <button id="reset" onclick=resetGame()>Reset</button>
+        </div>
+    </main>
+</body>
+
+</html>

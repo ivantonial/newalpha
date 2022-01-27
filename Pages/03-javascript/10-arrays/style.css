@@ -1,0 +1,102 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'McLaren', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+@font-face { 
+    font-family: "Proxima-N-W01-Reg"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg"); 
+    font-display: block; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+body {
+    background-image: url(images/matrix-green-numbers.jpg);
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(218, 250, 215, 0.6);
+    padding: 20px;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.memory, .memoryValue, .results, .functions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.memoryValue, .functions {
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.memorySpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 5vw;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.arrayInception {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 50px;
+    border-radius: 30px;
+}
+
+.memoryValue h2, .memoryValue span, .values, .finalValues {
+    background-color: rgba(218, 250, 215, 0.75);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+input {
+    text-align: center;
+}

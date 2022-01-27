@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/bart2.png" type="image/x-icon">
+    <title>Um arroto engarrafado não é projeto de ciências</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - calculator" />
+    <meta property="og:description" content="Estudo de Operações Matemáticas - Calculadora simples" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-v2.css" />
+    <!-- Javascript -->
+    <script src="./script-v2.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Punição do Bart</h1>
+            <form>
+                <p>Diga quantas vezes você quer que o Bart escreva: "Um arroto não é projeto de ciências"</p>
+                <input type="number" class="qtdFrases" id="quantity" name="quantity" />
+                <button type="button" id="submitButton" class="submitButton" onclick="submitData()">Castigar!</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <p id="counter"></p>
+        </div>
+        <section class="blackboard">
+            <div class="punish">
+                <div id="frasesContainer" class="frasesContainer">
+                    <p id="frases">
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

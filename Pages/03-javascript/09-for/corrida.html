@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/carro-esporte1.png" type="image/x-icon">
+    <title>Corrida</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - calculator" />
+    <meta property="og:description" content="Estudo de Operações Matemáticas - Calculadora simples" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <H1 class="title">Jogo de Corrida</H1>
+    </header>
+
+    <main>
+        <section class="choice">
+            <h2 class="class">Escolha o número de voltas da prova</h2>
+            <form>
+                <div>
+                    <input type="radio" id="fast" name="race" value="10" />
+                    <label for="fast">Corrida Rápida (10 voltas)</label>
+                </div>
+                <div>
+                    <input type="radio" id="grandPrix" name="race" value="70" />
+                    <label for="grandPrix">Grande Prêmio (70 voltas)</label>
+                </div>
+                <div>
+                    <input type="radio" id="endurance" name="race" value="160" />
+                    <label for="endurance">Enduro (160 voltas)</label>
+                </div>
+                <button type="button" id="raceButton" onclick="raceResult()">Gerar Resultado</button>
+            </form>
+            <div id="divResult" class="divResult">
+                <p id="resultLaps" class="result">
+
+                </p>
+                <p id="resultWinner" class="result">
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

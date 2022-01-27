@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Treino Canvas" />
+    <meta property="og:description" content="Testes canvas" />
+    <meta property="og:image" content="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F233338003_1474787772884019_855391963800207351_n.jpg%3Fccb%3D11-4%26oh%3D82579ee5aa63befe40e8568121373c24%26oe%3D616F117C&t=l&u=551239231360-1629409725%40g.us&i=1631229617&n=WdXBesqFkwDT%2F3E7zWPy27Uqj5EojK4u%2B38S%2B4ncvHc%3D" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+</head>
+<body>
+    <div>
+        <button><a href="/index.html">Voltar</a></button>
+    </div>
+    <main>
+        <br /><br />
+        <canvas id="VeryFirstExampleCanvas" width=510 height=60></canvas>
+        <br /><br /><br />
+        <canvas id="FillStyleSample1" width=950 height=120> </canvas>
+        <br /><br /><br />
+        <canvas id="RainbowStrokeStyleSample1" width=950 height=120> </canvas>
+    </main>
+    <script>
+        var canvas = document.getElementById ('VeryFirstExampleCanvas');    // acesso ao objeto canvas
+        var context = canvas.getContext ('2d');                             // acesso ao contexto canvas
+        context.fillStyle = '#8B008B';                                      // selecionando a cor hexadecimal roxa
+        context.fillRect (0,0,510,60);                                      // desenhando um retangulo roxo em todo canvas
+        context.fillStyle = '#F0E68C';                                      // Selecionando a cor amarela hexadecimal
+        context.fillRect (5,5,500,50);                                      // desenhando um retangulo amarelo dentro do retangulo roxo
+        context.fillStyle = '#8B008B';                                      // Selecionando novamente a cor roxa
+        context.font = '40pt Arial';                                        // definindo a font em CSS do texto
+        context.fillText ('Ivan Ramalho Tonial',10,50);                     // Escreve o nome 'Ivan Ramalho Tonial'
+    </script>
+    <script>
+        var context = document.getElementById('FillStyleSample1').getContext('2d');
+        // 1. selecionando a cor hexadecimanl roxa '#8B008B'
+        context.fillStyle = '#8B008B'; 
+        // 2. desenhando meio circulo           
+        context.beginPath();
+        context.moveTo (60, 10);
+        context.lineTo (60, 110);
+        context.bezierCurveTo (0, 110, 0, 10, 60, 10);
+        context.fill();
+        context.closePath();
+        // 3. desenhando um retangulo na parte superior direita do circulo
+        context.fillStyle = '#DC143C';
+        context.fillRect (80, 10, 280, 10);
+        context.fillStyle = '#8B008B';
+        context.fillRect (280, 10, 680, 10);
+        context.fillStyle = '#DC143C';
+        context.fillRect (680, 10, 830, 10);
+        // 4. selecionando a fonte e escrevendo 'Ivan Ramalho Tonial!'
+        context.font = '70pt sans-serif';
+        context.fillStyle = '#8B008B';
+        context.fillText ('Ivan', 80, 110);
+        context.fillStyle = '#DC143C';
+        context.fillText ('Ramalho', 280, 110);
+        context.fillStyle = '#8B008B';
+        context.fillText ('Tonial', 680, 110);  
+      </script>
+      <script>
+        var context = document.getElementById('RainbowStrokeStyleSample1').getContext('2d');
+        // 1. set strokeStyle to a linear gradient value
+        var rainbowGradient = context.createLinearGradient (0, 60, 950, 60);
+        rainbowGradient.addColorStop (0,    'red');
+        rainbowGradient.addColorStop (0.25, 'yellow');
+        rainbowGradient.addColorStop (0.5,  'green');
+        rainbowGradient.addColorStop (0.75, 'blue');
+        rainbowGradient.addColorStop (1,    'violet');
+        context.strokeStyle = rainbowGradient;
+        // 2. draw a kind of half cirlce on the left            
+        context.beginPath();
+        context.moveTo (60, 10);
+        context.lineTo (60, 110);
+        context.bezierCurveTo (0, 110, 0, 10, 60, 10);
+        context.stroke();
+        context.closePath();
+        // 3. draw a rectangle on the right top
+        context.strokeRect (80, 10, 860, 10);
+        // 4. set the text font and write 'Hello!' on the right bottom of the canvas
+        context.font = '70pt sans-serif';
+        context.strokeText ('Ivan Ramalho Tonial', 80, 110);  
+      </script>
+</body>
+</html>

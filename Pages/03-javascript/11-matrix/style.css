@@ -1,0 +1,140 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'McLaren', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+@font-face { 
+    font-family: "Proxima-N-W01-Reg"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg"); 
+    font-display: block; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(238, 215, 185);
+}
+
+header {
+    text-align: center;
+    font-size: 26px;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    background-color: rgba(202, 127, 57, 0.213);
+    border-bottom: 2px solid black;
+}
+
+button {
+    min-width: 30px;
+    min-height: 30px;
+    width: 10vw;
+    height: 10vw;
+    font-size: 6vw;
+    background: none;
+    border: none;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#x11 {
+    border-right: 0.25vw solid black;
+    border-bottom: 0.25vw solid black;
+    border-top-left-radius: 2vw;
+}
+
+#x12 {
+    border-right: 0.25vw solid black;
+    border-bottom: 0.25vw solid black;
+    border-left: 0.25vw solid black;
+}
+
+#x13 {
+    border-bottom: 0.25vw solid black;
+    border-left: 0.25vw solid black;
+    border-top-right-radius: 2vw;
+}
+
+#x21 {
+    border-right: 0.25vw solid black;
+    border-bottom: 0.25vw solid black;
+    border-top: 0.25vw solid black;
+}
+
+#x22 {
+    border-right: 0.25vw solid black;
+    border-bottom: 0.25vw solid black;
+    border-top: 0.25vw solid black;
+    border-left: 0.25vw solid black;
+}
+
+#x23 {
+    border-left: 0.25vw solid black;
+    border-bottom: 0.25vw solid black;
+    border-top: 0.25vw solid black;
+}
+
+#x31 {
+    border-top: 0.25vw solid black;
+    border-right: 0.25vw solid black;
+    border-bottom-left-radius: 2vw;
+}
+
+#x32 {
+    border-left: 0.25vw solid black;
+    border-top: 0.25vw solid black;
+    border-right: 0.25vw solid black;
+}
+
+#x33 {
+    border-left: 0.25vw solid black;
+    border-top: 0.25vw solid black;
+    border-bottom-right-radius: 2vw;
+}
+
+#x11:hover, #x12:hover, #x13:hover, #x21:hover, #x22:hover, #x23:hover, #x31:hover, #x32:hover, #x33:hover {
+    background-color: rgb(191, 181, 167);
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reset {
+    font-size: 1.5vw;
+    width: 6vw;
+    height: 2.5vw;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: .5vw;
+}
+
+#reset:hover {
+    background-color: rgb(223, 168, 65);
+    color: rgb(26, 43, 169);
+}

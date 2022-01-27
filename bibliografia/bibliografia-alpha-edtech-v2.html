@@ -1,0 +1,607 @@
+<!-- Desenvolvimento didático 
+    Proposta:
+        1. Criação de uma página com todos os links fornecidos até o momento:
+            a. Formatação de texto (tags: 'b', 'strong', 'em', i);
+            b. Adição de cores usando o atributo "style"(CSS);
+            c. Textos Clicáveis, redirecionamento usando a tag 'a';
+            d. Imagem com atributo target;
+            e. Tabela com no mínimo 4 linhas e 3 colunas usando a tag 'table'
+            f. Um comentário que não será exibido ao usuário            
+-->
+<!-- Início do código -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Bibliografia Alpha Edtech</title>
+    <!-- Metadados -->
+    <meta property="og:title" content="Bibliografia Alpha Edtech">
+    <meta property="og:desciption" content="Bibliografia Alpha Edtech">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ivantonial.github.io">
+    <meta property="og:image" content="https://edtech-uploads.s3.amazonaws.com/userfiles/files/T2_LOVELACE(24).jpeg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="256">
+    <style>
+        .menubar {
+            width: 70%;
+            height: auto;
+            background-color: rgb(255, 43, 43);
+            margin: 0 auto;
+        }
+        .hard-class {
+            width: 70%;
+            height: auto;
+            background-color: rgb(255, 188, 43);
+            margin: 0 auto;
+        }
+        .conceito-class{
+            width: 90%;
+            height: auto;
+            background-color: rgb(255, 236, 196);
+            margin: 0 auto;
+        }
+        .soft-class{
+            width: 70%;
+            height: auto;
+            background-color: rgb(0, 184, 197);
+            margin: 0 auto;
+        }
+        .conceito-soft-class{
+            width: 90%;
+            height: auto;
+            background-color: rgb(132, 247, 255);
+            margin: 0 auto;
+        }
+        .block-menu-class{
+            width: 90%;
+            height: auto;
+            background-color: rgb(255, 196, 196);
+            margin: 0 auto;
+        }
+        .voltar {
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 0.1em 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="voltar">
+        <button><a href="/index.html">Voltar</a></button>
+    </div>
+    <header>
+        <fieldset class="menubar" style="max-width: 550px">
+            <h1>Menu</h1>
+                <fieldset id="block-menu" class="block-menu-class">
+                <ul>
+                    <h2>Hard Skills:</h2>
+                    <ul>
+                        <li><a href="#hard-skills">Hard Skills</a></li>
+                        <ul>
+                            <li><a href="#introd-conceitos-basicos-web">Introdução e conceitos básicos sobre web</a></li>
+                            <ol>
+                                <li><a href="#tcp-udp-icmp-ping-tracerout">TCP, UDP, ICMP, ping e tracerout/tracert</a></li>
+                                <li><a href="#ip-v4-v6-nat-whois">IP (v4 e v6), NAT e whois</a></li>
+                                <li><a href="#dns-registro-br">DNS e registro de domínio .br</a></li>
+                                <li><a href="#arquitetura-xml-json">Arquiteturas, XML e JSON</a></li>
+                                <li><a href="#controle-versao-inicio">Controle de Versão - Início</a></li>
+                                <li><a href="#controle-versao-prim-passos">Controle de Versão - Primeiros Passos com Git</a></li>
+                            </ol>
+                            <li><a href="#front-end">Trilha: Front-End</a></li>
+                            <ol>
+                                <li><a href="#ling-not-html">Linguagem de Notação HTML</a></li>
+                                <ul>
+                                    <li><a href="#config-amb-prim-html">Configuração de Ambiente (Navegadores e IDE) e Primeiro HTML</a></li>
+                                    <li><a href="#html-basico">Tutorial HTML básico</a></li>
+                                    <li><a href="#html-biginners">HTML for beginners</a></li>
+                                    <li><a href="#html-living-standard">HTML Living Standard</a></li>
+                                    <li><a href="#elementos">Elementos 'div' e 'span', Atributos 'id' e 'class' e Formulários</a></li>
+                                    <li><a href="#open-graph">Open Graph Protocol</a></li>
+                                    <li><a href="#audio-video">Audio e Vídeo</a></li>
+                                    <li><a href="#iframe">iframe</a></li>
+                                    <li><a href="#svg">svg</a></li>
+                                    <li><a href="#canvas">canvas</a></li>
+                                    <li><a href="#webgl">WebGL</a></li>
+                                </ul>
+                                <li><a href="#prim-passos-css">Primeiros passos com CSS</a></li>
+                                <ul>
+                                    <li><a href="#tut-prim-passos-css">Primeiros passos com CSS</a></li>
+                                    <li><a href="#cascata-heranca-css">Cascata e Herança em CSS</a></li>
+                                    <li><a href="#seletores-css">Seletores em CSS</a></li>
+                                    <li><a href="#modelo-de-caixa-css">Modelo de caixa em CSS</a></li>
+                                    <li><a href="#elementos-caixas">Elementos em caixas</a></li>
+                                    <li><a href="#org-css">Organizing your CSS</a></li>
+                                    <li><a href="#estilizacao-fontes">Estilização de fontes</a></li>
+                                    <li><a href="#estilizacao-lists-links">Estilização de listas e links / Web fonts / Google fonts</a></li>
+                                    <li><a href="#cores-css">Teoria das cores</a></li>
+                                    <li><a href="#flex-box">Flex box</a></li>
+                                    <li><a href="#curriculos"></a></li>
+                                    <li><a href="#sitesWix"></a></li>
+                                    <li><a href="#design-interface">Design de interface - Conceitos básicos</a></li>
+                                </ul>
+                                <li><a href="#photopea">Photopea/Photoshop</a></li>
+                                <ul>
+                                    <li><a href="#photopea-parte-1">Photopea Parte 01</a></li>
+                                    <li><a href="#photopea-parte-2">Photopea Parte 02</a></li>
+                                    <li><a href="#photopea-parte-3">Photopea Parte 03</a></li>
+                                    <li><a href="#photopea-parte-4">Photopea Parte 04</a></li>
+                                </ul>
+                                <li><a href="#figma">Figma</a></li>
+                                <li><a href="#javascript">Primeiros passos com javascript</a></li>
+                                <ul>
+                                    <li><a href="#oqjavascript">O que é Javascript?</a></li>
+                                </ul>
+                            </ol>
+                        </ul>
+                    </ul>
+                    <h2>Soft Skills:</h2>
+                    <ul>
+                        <li><a href="#soft-skills">Soft Skills</a></li>
+                    </ul>
+                </ul>
+            </fieldset>
+        </fieldset>
+    </header>
+    <main>
+        <fieldset id="hard-skills" class="hard-class"  style="max-width: 550px">
+            <h1>Hard Skills</h1>
+            <fieldset id="conceitos-web" class="conceito-class">
+                <h2 id="introd-conceitos-basicos-web">Trilha: Introdução e conceitos básicos sobre web</h2>
+                <h3 id="tcp-udp-icmp-ping-tracerout">TCP, UDP, ICMP, ping e tracerout/tracert</h3>
+                <h4 id="tcp">Transmission Control Protocol (TCP)</h4>
+                <ul>
+                    <li><a href="https://datatracker.ietf.org/doc/html/rfc793">RCF 793 - TCP</a></li>
+                    <li><a href="https://www.meridianoutpost.com/resources/articles/well-known-tcpip-ports.php">What are the TCP/IP Well Known Port Numbers (0 to 1023)</a></li>
+                </ul>
+                <h4 id="udp">User Datagram Protocol (UDP)</h4>
+                <ul>
+                    <li><a href="https://datatracker.ietf.org/doc/html/rfc768">RCF 768 - UDP</a></li>
+                </ul>
+                <h4 id="icmp">Internet Control Message Protocol (ICMP)</h4>
+                <ul>
+                    <li><a href="https://datatracker.ietf.org/doc/html/rfc792">RCF 792 - ICMP</a></li>
+                    <li><a href="https://hub.packtpub.com/understanding-network-port-numbers-tcp-udp-and-icmp-on-an-operating-system/">Understanding network port numbers, TCP, UDP, and ICMP on an operating system</a></li>
+                </ul>
+                <h4 id="ping">Ping</h4>
+                <ul>
+                    <li><a href="https://man.cx/ping(1)">Ping</a></li>
+                </ul>
+                <h4 id="tracerout">Tracerout</h4>
+                <ul>
+                    <li><a href="https://www.ibm.com/docs/en/aix/7.2?topic=t-traceroute-command">traceroute Command</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/topic/how-to-use-tracert-to-troubleshoot-tcp-ip-problems-in-windows-e643d72b-2f4f-cdd6-09a0-fd2989c7ca8e">How to Use TRACERT to Troubleshoot TCP/IP Problems in Windows</a></li>
+                </ul>
+                <h3 id="ip-v4-v6-nat-whois">IP (v4 e v6), NAT e whois</h3>
+                <h4 id="internet-protocol">Internet Protocol (IP)</h4>
+                <h5 id="ipv4">IPv4</h5>
+                <ul>
+                    <li><a href="https://www.lacnic.net/820/3/lacnic/2-enderecos-ipv4">Endereços IPv4</a></li>
+                </ul>
+                <h5 id="ipv6">IPv6</h5>
+                <ul>
+                    <li><a href="https://www.lacnic.net/822/3/lacnic/">Endereços IPv6</a></li>
+                    <li><a href="https://anchor.fm/camada8/episodes/Rumo-ao-IPv6-Brasil-ei20ng/a-a2u7kts">Podecast: Rumo ao IPv6 Brasil!</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dkVHgQDRLxE">Video: [Intra Rede] Live Fim do IPv4, transferência de IP e adoção do IPv6</a></li>
+                </ul>
+                <h4 id="enderecos-ip-publ-priv">Endereços IP públicos e privados</h4>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Rede_privada">Rede privada</a></li>
+                </ul>
+                <h4 id="nat">NAT</h4>
+                <ul>
+                    <li><a href="https://tools.ietf.org/html/rfc2663">RFC 2663 - NAT</a></li>
+                </ul>
+                <h4 id="whois">Whois</h4>
+                <ul>
+                    <li><a href="https://registro.br/tecnologia/ferramentas/whois/">registro.br</a></li>
+
+                    <li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/whois">Windows</a></li>
+
+                    <li><a href="https://www.linuxforce.com.br/comandos-linux/comandos-linux-comando-whois/">Linux</a></li>
+                    <li>Mac - Abrir o console e digitar “whois” seguido do domínio a ser pesquisado</li>
+                </ul>
+                <h3 id="dns-registro-br">DNS e registro de domínio .br</h3>
+                <h4 id="dns">Domain Name System (DNS)</h4>
+                <ul>
+                    <li><a href="https://datatracker.ietf.org/doc/html/rfc1034">RFC 1034 - DOMAIN NAMES - CONCEPTS AND FACILITIES</a></li>
+                    <li><a href="https://datatracker.ietf.org/doc/html/rfc1035">RFC 1035 - DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=epWv0-eqRMw">Vídeo: A importância do DNS nas redes, explicada pelo NIC.br.</a></li>
+                </ul>
+                <h4 id="servidores-dns-publ">Servidores DNS públicos</h4>
+                <ul>
+                    <li><a href="https://canaltech.com.br/internet/veja-como-escolher-o-melhor-servidor-dns-para-acelerar-sua-navegacao/">Servidor DNS: Veja como escolher o melhor para acelerar sua navegação</a></li>
+                </ul>
+                <h4 id="registro-br">Registro de dominio .br</h4>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=gZRYDxWuYpk">Vídeo: Como registrar um domínio .br?</a></li>
+                </ul>
+                <h4 id="nslookup">nslookup</h4>
+                <ul>
+                    <li><a href="https://man.cx/nslookup">Manpages: nslookup</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup">Microsoft: nslookup</a></li>
+                </ul>
+                <h3 id="arquitetura-xml-json">Arquiteturas, XML e JSON</h3>
+                <h4 id="arquitetura-cliente-servidor">Arquitetura Cliente Servidor</h4>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor">Modelo cliente–servidor</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=SEC-tbKa1KQ">Vídeo: Aula 03 - Arquitetura cliente servidor</a></li>
+                </ul>
+                <h4 id="arquitetura-3-camadas">Arquitetura de 3 Camadas</h4>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Modelo_em_tr%C3%AAs_camadas">Wikipédia: Modelo em três camadas</a></li>
+                    <li><a href="https://www.ibm.com/br-pt/cloud/learn/three-tier-architecture">IBM: Arquitetura de três camadas (tiers)</a></li>
+                    <li><a href="https://www.ibm.com/docs/pt-br/was-zos/9.0.5?topic=overview-three-tier-architectures">IBM: Arquiteturas de Três Camadas</a></li>
+                </ul>
+                <h4 id="arquitetura-orientada-servicos">Arquitetura Orientada a Serviços (SOA)</h4>
+                <ul>
+                    <li><a href="https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-service-oriented-architecture">Red Hat: O que é arquitetura orientada a serviços (SOA)?</a></li>
+                </ul>
+                <h4 id="arquitetura-microsservicos">Arquitetura de Microsserviços</h4>
+                <ul>
+                    <li><a href="https://www.redhat.com/pt-br/topics/microservices">Red Hat: Introdução aos microsserviços</a></li>
+                    <li><a href="https://docs.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices">Microsoft: Estilo de arquitetura de microsserviços</a></li>
+                </ul>
+                <h4 id="web-services">Web Services</h4>
+                <ul>
+                    <li><a href="https://www.devmedia.com.br/web-services/2873">DEVMEDIA: Web Services</a></li>
+                    <li>Exemplo: <a href="https://portal.tcu.gov.br/webservices-tcu/">TCU: Catálogo de serviços de software (Web Services)</a></li>
+                    <ul>
+                        <li><a href="https://dados-abertos.apps.tcu.gov.br/api/acordao/recupera-acordaos?inicio=001&quantidade=2">https://dados-abertos.apps.tcu.gov.br/api/acordao/recupera-acordaos?inicio=001&quantidade=2</a></li>
+                    </ul>
+                </ul>
+                <h4 id="xml">XML</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/XML/">W3: Extensible Markup Language (XML)</a></li>
+                </ul>
+                <h4 id="json">JSON</h4>
+                <ul>
+                    <li><a href="https://www.json.org/json-en.html">Introducing JSON</a></li>
+                </ul>
+                <h3 id="controle-versao-inicio">Controle de Versão - Início</h3>
+                <h4 id="sistema-controle-versao">Sistema de Controle de Versão</h4>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=8MsYOAnU1eY">Vídeo: Sistema de Controle de Versão</a></li>
+                    <li><a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o">1.1 Começando - Sobre Controle de Versão</a></li>
+                </ul>
+                <h4 id="historia-git">Uma Breve História do Git</h4>
+                <ul>
+                    <li><a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git">1.2 Começando - Uma Breve História do Git</a></li>
+                </ul>
+                <h4 id="basico-git">O Básico do Git</h4>
+                <ul>
+                    <li><a href="http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git">1.3 Começando - O Básico do Git</a></li>
+                </ul>
+                <h4 id="instalacao-git-bash">Instalação do Git Bash</h4>
+                <ul>
+                    <li><a href="https://git-scm.com/downloads">Download git-scm</a></li>
+                </ul>
+                <h4 id="criando-conta-github">Criando sua conta no GitHub</h4>
+                <ul>
+                    <li><a href="https://github.com/signup">GitHub</a></li>
+                </ul>
+                <h3 id="controle-versao-prim-passos">Controle de Versão - Primeiros Passos com Git</h3>
+                <h4 id="entendendo-git">Entendendo Git | (não é um tutorial!)</h4>
+                <ul>
+                    <li><a href="https://youtu.be/6Czd1Yetaac">Vídeo: Entendendo GIT | (não é um tutorial!)</a></li>
+                </ul>
+                <h4 id="guia-git">Git - Guia Prático</h4>
+                <ul>
+                    <li><a href="https://rogerdudler.github.io/git-guide/index.pt_BR.html">git - guia prático</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DqTITcMq68k">Vídeo: O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=UBAX-13g8OM">Vídeo: COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a></li>
+                </ul>
+                <h4 id="gitignore">.gitignore</h4>
+                <ul>
+                    <li><a href="https://git-scm.com/docs/gitignore">.gitignore</a></li>
+                </ul>
+                <h4 id="readme">README</h4>
+                <ul>
+                    <li><a href="https://github.com/othneildrew/Best-README-Template">README Template</a></li>
+                </ul>
+            </fieldset>
+            <fieldset id="front-end" class="conceito-class">
+                <h2>Trilha: Front-End</h2>
+                <h3 id="ling-not-html">Linguagem de Notação HTML</h3>
+                <h4 id="config-amb-prim-html">Configuração de Ambiente e Primeiro HTML</h4>
+                <ul>
+                    <li><a href="https://www.google.com/intl/pt-BR/chrome/">Google Chrome</a></li>
+                    <li><a href="https://www.mozilla.org/pt-BR/firefox/new/">Mozilla Firefox</a></li>
+                    <li><a href="https://www.apple.com/br/safari/">Apple Safari</a></li>
+                    <li><a href="https://www.opera.com/pt-br">Opera</a></li>
+                    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                </ul>
+                <h4 id="html-basico">Tutorial HTML Básico</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML básico</a></li>
+                </ul>
+                <h4 id="jsfiddle1">JSFIDDLE</h4>
+                <ul>
+                    <li><a href="https://jsfiddle.net/">jsfiddle</a></li>
+                </ul>
+                <h4 id="html-biginners">HTML for beginners</h4>
+                <ul>
+                    <li><a href="https://www.theblogstarter.com/html-for-beginners/">HTML FOR BEGINNERS – INCLUDES TAGS FOR HTML5</a></li>
+                </ul>
+                <h4 id="html-living-standard">HTML Living Standard</h4>
+                <ul>
+                    <li><a href="https://html.spec.whatwg.org/multipage/">HTML - Living Standard</a></li>
+                </ul>
+                <h4 id="elementos">Elementos</h4>
+                <h5 id="div">Elemento <i>'div'</i></h5>                
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div">mozilla: 'div'</a></li>
+                    <li><a href="https://medium.com/@zac_heisey/7-alternatives-to-the-div-html-tag-7c888c7b5036">7 Alternatives to the 'div' HTML Tag</a></li>
+                </ul>                
+                <h5 id="span">Elemento <i>'span'</i></h5>                
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/span">mozilla: 'span'</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLSpanElement">HTMLSpanElement</a></li>
+                </ul>                
+                <h5 id="id">Atributo <i>'id'</i></h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/id">mozilla: atributo global 'id'</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/id">mozilla: 'Element.id'</a></li>
+                </ul>
+                <h5 id="class">Atributo <i>‘class’</i></h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/class">mozilla: atributo global 'class'</a></li>
+                </ul>
+                <h5 id="formularios">Trabalhando com formulários</h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms/Meu_primeiro_formulario_HTML">Meu primeiro formulário HTML</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">Como estruturar um formulário HTML</a></li>
+                    <li><a href="https://alistapart.com/article/sensibleforms/#">Sensible Forms: A Form Usability Checklist</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input">mozilla: o elemento HTML 'input'</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=MKSQYsLLFEo">Vídeo: HTML Forms - Learn 18 HTML Input Types | HTML5 (2020)</a></li>
+                </ul>
+                <h4 id="open-graph">Open Graph</h4>
+                <ul>
+                    <li><a href="https://ogp.me">Open Graph Protocol</a></li>
+                </ul>
+                <h4 id="audio-video">Audio e Vídeo</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/audio">mozilla Audio</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/video">mozilla Vídeo</a></li>
+                </ul>
+                <h4 id="iframe">iframe</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe">mozilla iframe</a></li>
+                    <li><a href="https://developers.google.com/youtube/player_parameters?hl=pt-br">youtube iframe</a></li>
+                </ul>
+                <h4 id="svg">svg</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg">mozilla svg</a></li>
+                    <li><a href="https://photopea.com">Photopea</a></li>
+                    <li><a href="https://rockcontent.com/br/blog/svg/">rockcontent SVG</a></li>
+                    <li><a href="https://www.devmedia.com.br/introducao-ao-svg-scalable-vector-graphics/27280">DevMedia - Introdução ao SVG</a></li>
+                    <li><a href="https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773">DevMedia - Entendendo e usando o SVG</a></li>
+                    <li><a href="https://nandovieira.com.br/um-pouco-sobre-svg">Blog nando vieira - SVG</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction">Mozilla - Introdução SVG</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">Mozilla - SVG elements A to Z</a></li>
+                </ul>
+                <h4 id="canvas">canvas</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Canvas">Mozilla - Canvas</a></li>
+                </ul>
+                <h4 id="webgl">WebGL</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/API/WebGL_API">Mozilla: WebGL</a></li>
+                </ul>
+                <h3 id="prim-passos-css">Primeiros passos com CSS</h3>
+                <h4 id="tut-prim-passos-css">Tutorial de primeiros passos</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS">Mozilla: Aprenda a estilizar HTML utilizando CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps">Mozilla: Primeiros passos com CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">Mozilla: What is CSS?</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started">Mozilla: Getting started with CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured">Mozilla: How CSS is structured</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works">Mozilla: How CSS works</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Using_your_new_knowledge">Mozilla: Using your new knowledge</a></li>
+                </ul>
+                <h4 id="cascata-heranca-css">Cascata e Herança em CSS</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Mozilla: Cascade and inheritance</a></li>
+                </ul>
+                <h4 id="seletores-css">Seletores em CSS</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">Mozilla: CSS selectors</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors">Mozilla: Type, class, and ID selectors</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors">Mozilla: Attribute selectors</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">Pseudo-classes and pseudo-elements</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators">Combinators</a></li>
+                </ul>
+                <h4 id="modelo-de-caixa-css">Modelo de caixa em CSS</h4>
+                <ul>
+                    <h5 id="box-model">Modelo de caixa ("box model")</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">Mozilla: The box model</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Mozilla: Display</a></li>
+                    </ul>
+                    <h5 id="estilos-caixas">Estilos de caixas</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Mozilla: Width</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Mozilla: Height</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">Mozilla: Padding</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">Mozilla: Margin</a></li>
+                    </ul>
+                    <h5 id="overflow-conteudo">"Overflow" de conteúdo</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content">Mozilla: Overflow content</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">Mozilla: Overflow</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow">Mozilla: text-overflow</a></li>
+                    </ul>
+                </ul>
+                <h4 id="elementos-caixas">Elementos em caixas</h4>
+                <ul>
+                    <h5 id="fundos-bordas">Fundos e bordas em CSS</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders">Mozilla: Fundos e bordas em CSS</a></li>
+                    </ul>
+                    <h5 id="estilos-caixas">Estilos de caixas</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-color">Mozilla: background-color</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">Mozilla: border</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color">Mozilla: border-color</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Mozilla: border-style</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width">Mozilla: border-width</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">Mozilla: border-radius</a></li>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow">Mozilla: border-shadow</a></li>
+                    </ul>
+                </ul>
+                <h4 id="org-css">Organizing your CSS</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing">Mozilla: Organizing your CSS</a></li>
+                </ul>
+                <h4 id="#estil-fonts">Estilização de fontes</h4>
+                <ul>
+                    <h5 id="estilizacao-fontes">Estilização de fontes</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Styling_text">Mozilla: Estilizando texto</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals">Mozilla: Fundamental text and font styling</a></li>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/font-family">Mozilla: font-family</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Mozilla: font-weight</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">Mozilla: font-size</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">Mozilla: text-decoration</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions">Mozilla: Handling different text directions</a></li>
+                    </ul>
+                    <h5 id="estilizacao-lists-links">Estilização de listas e links / Web fonts / Google fonts</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists ">Mozilla: Styling lists</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links">Mozilla: Styling links</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts">Mozilla: Web fonts</a></li>
+                        <li><a href="https://www.fontsquirrel.com/tools/webfont-generator">Font squirrel: Webfont Generator</a></li>
+                        <li><a href="https://developers.google.com/fonts/docs/getting_started">Google: Get Started with the Google Fonts API</a></li>
+                    </ul>
+                </ul>
+                <h4 id="cores-css">Cores em CSS</h4>
+                <ul>
+                    <h5 id="teoria-cores">Teoria das cores</h5>
+                    <ul>
+                        <li><a href="https://uxdesign.cc/turning-color-theory-into-css-a-quick-dive-7c6e485ac701">Use color theory to create shape your designs</a></li>
+                    </ul>
+                    <h5 id="css-colors">Cores em CSS</h5>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/css/css3_colors.asp">w3schools: CSS Colors</a></li>
+                        <li><a href="https://www.w3schools.com/cssref/css_colors_legal.asp">w3schools: CSS Legal Color Values</a></li>
+                    </ul>
+                    <h5 id="harmonizacao-cores">Harmonização de cores em CSS</h5>
+                    <ul>
+                        <li><a href="https://htmlcolorcodes.com/resources/best-color-palette-generators/">Best Color Palette Generators</a></li>
+                        <li><a href="https://www.sessions.edu/color-calculator/">The Sessions College Color Calculator</a></li>
+                    </ul>
+                </ul>
+                <h4 id="flex-box">Flex Box</h4>
+                <ul>
+                    <h5>O modelo de flexible box</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Mozilla: CSS Flexible Box Layout</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Mozilla: Basic concepts of flexbox</a></li>
+                    </ul>
+                    <h5>Alinhando itens dentro de um container flex</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container">Mozilla: Aligning Items in a Flex Container</a></li>
+                    </ul>
+                    <h5>"Wrap" em "flex box"</h5>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items">Mastering Wrapping of Flex Items</a></li>
+                    </ul>
+                </ul>
+                <h3 id="curriculos">Currículos</h3>
+                <ul>
+                    <li><a href="https://business.tutsplus.com/pt/articles/best-html-resume-templates--cms-28115">15 Melhores modelos de currículo HTML para sites pessoais impressionantes</a></li>
+                    <li><a href="https://pt.wix.com/website/templates/html/portfolio-cv/resumes-cvs">https://pt.wix.com/website/templates/html/portfolio-cv/resumes-cvs</a></li>
+                </ul>
+                <h3 id="sitesWix">Site Wix - Desafio Cópia de Site</h3>
+                <ul>
+                    <li><a href="https://pt.wix.com/website/templates/html/online-store"></a>Site Wix</li>
+                </ul>
+                <h3 id="design-interface">Design de interface - Conceitos básicos</h3>
+                <ul>
+                    <h4>Design de Interface</h4>
+                    <ul>
+                        <li><a href="https://youtu.be/zaFEEvHZgjw">O que é Design? // UXNOW</a></li>
+                    </ul>
+                    <h4>User Experience (UX)</h4>
+                    <ul>
+                        <li><a href="https://youtu.be/WAi6ixIfdd4">O que é Design? | User Experience</a></li>
+                        <li><a href="https://youtu.be/ii_yO_at8Do">Como fazer UX // UXNOW</a></li>
+                    </ul>
+                    <h4>User Interface (UI)</h4>
+                    <ul>
+                        <li><a href="https://www.chiefofdesign.com.br/ui-design/">UI Design – O que é User Interface Design (UI DESIGN)?</a></li>
+                        <li><a href="https://desenvolvimentoparaweb.com/ux/19-principios-user-interface-design/">19 princípios de User Interface Design</a></li>
+                    </ul>
+                    <h4>Usabilidade</h4>
+                    <ul>
+                        <li><a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/">Usability 101: Introduction to Usability</a></li>
+                    </ul>
+                    <h4>Arquitetura de Informação</h4>
+                    <ul>
+                        <li><a href="https://rockcontent.com/br/blog/arquitetura-da-informacao/">O que á arquitetura da informação? Entenda esse conceito e suas aplicações</a></li>
+                    </ul>
+                    <h4>Outros links interessantes</h4>
+                    <ul>
+                        <li><a href="https://elos360.com.br/index.php/2017/08/22/as-10-leis-da-simplicidade-e-sua-complexa-missao-no-mundo-dos-negocios/">As 10 leis da simplicidade e sua complexa missão no mundo dos negócios</a></li>
+                        <li><a href="https://www.oficinadanet.com.br/post/11073-resenha-do-livro-nao-me-faca-pensar">Resenha do livro Não me faça pensar</a></li>
+                    </ul>
+                    <h4>Estado da Arte</h4>
+                    <ul>
+                        <li><a href="https://youtu.be/5RluSnRPRbI">UI Design Trends 2021</a></li>
+                        <li><a href="https://youtu.be/tPoRAL7Lm1M">UX Design Trends 2021</a></li>
+                        <li><a href="https://youtu.be/w5rnkWPeBak">UI design Trends 2021 | UI UX Design Trends In 2021</a></li>
+                        <li><a href="https://youtu.be/kvAcmhlbeP0">UI Design Trends for 2021 | Web Design Inspiration</a></li>
+                        <li><a href="https://youtu.be/gq9w14ag0ls">Top 5 UI/UX Design [Trends] Tips by Cuberto (2020)</a></li>
+                        <li><a href="https://youtu.be/xbfJJnQVoGQ">Top 5 UI/UX Design [Trends] Tips // Vol. 2</a></li>
+                        <li><a href="https://youtu.be/p7dbWAENmqE">Top 5 UI/UX Design [Trends] Tips // Vol. 3</a></li>
+                        <li><a href="https://youtu.be/Qe7_BNnseXs">20 Excellent UI/UX Design Animation Examples For Inspiration</a></li>
+                        <li><a href="https://youtu.be/IrRHlMIykwk">10 Excellent UI/UX Mobile Apps Design Trend To Expect in 2020 | UI Animation Trends in 2019 #Part2</a></li>
+                    </ul>
+                    <h4>Proporção de designers para engenheiros</h4>
+                    <ul>
+                        <li><a href="https://www.figma.com/resources/learn-design/getting-started/">Figma: Getting started</a></li>
+                    </ul>
+                </ul>
+                <h3 id="photopea">Photopea/Photoshop</h3>
+                <ul>
+                    <h4 id="photopea-parte-1">Parte 01</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=cnonF6LLX-c">Qual formato de imagem utilizar? GIF, JPEG, BPM, PNG:</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=FoviF4qDYRY">Aprenda photoshop em 5 minutos</a></li>
+                    </ul>
+                    <h4 id="photopea-parte-2">Parte 02</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=kW1n8aNu_58">As Principais Ferramentas do Photoshop</a></li>
+                    </ul>
+                    <h4 id="photopea-parte-3">Parte 03</h4>
+                    <ul>
+                        <li><a href="https://youtu.be/7XW77lHHoPs">Tutorial Básico Photoshop #2 - Tudo sobre camadas</a></li>
+                        <li><a href="https://youtu.be/y5li2NDcBW4">Dominando máscaras de camada no Photoshop</a></li>
+                    </ul>
+                    <h4 id="photopea-parte-4">Parte 04</h4>
+                    <ul>
+                        <li><a href="https://youtu.be/zeBGOWJi7pM">Principais camadas de ajuste do Photoshop</a></li>
+                    </ul>
+                </ul>
+                <h3 id="figma">Figma</h3>
+                <ul>
+                    <li><a href="https://www.canva.com/design/DAEtNVrFu6s/-l0fcCJxaW9TIJTeh0EHOg/view?utm_content=DAEtNVrFu6s&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent">Aula 01 - Figma</a></li>
+                </ul>
+                <h3 id="javascript">Primeiros passos com JavaScript</h3>
+                <ul>
+                    <h4 id="oqjavascript">O que é Javascript?</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Mozilla: O que é Javascript?</a></li>
+                    </ul>
+                </ul>
+            </fieldset>
+        </fieldset>
+        <fieldset id="soft-skills" class="soft-class" style="max-width: 550px">
+            <h1>Soft Skills</h1>
+            <fieldset id="conceito-soft" class="conceito-soft-class">
+            </fieldset>
+        </fieldset>
+    </main>
+</body>
+</html>

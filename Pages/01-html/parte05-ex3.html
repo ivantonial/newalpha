@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tilha Web: Módulo 02 - Parte 05 - Ex.03</title>
+    </head>
+    <body style="background-color: rgb(241, 236, 166);">
+        <div>
+            <button><a href="/index.html">Voltar</a></button>
+        </div>
+        <form method="POST">
+            <div style="max-width: 45%; margin: 0px auto;">
+            <h1>Trilha Web: Módulo 02 - Parte 05 - Ex.03!</h1>
+            <img src="https://ctl.s6img.com/society6/img/7NU0Wkp9QHhIjebGesxBNZWM4ec/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/539bf59645234aa8bfe3d16cd7a8e8d1/~~/funny-think-first-meme-cool-design-prints.jpg" alt="funny-think-first-meme-cool-design-prints" style="max-width: 150px; max-height: auto;" />
+            </div>
+            <fieldset id="questao1" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 1</legend>
+                <p>Entre com seu <b>nome completo</b>.</p>
+                <p><label for="thiddentag">Nome:</label> <input type="text" id="thiddentag" name="chiddentag" size="40" maxlength="70" placeholder="Nome Completo"/></p>
+            </fieldset>
+            <fieldset id="questao2" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 2</legend>
+                <p>Qual é o significado de <em>'html</em>?</p>
+                <input type="radio" name="html" id="HyperText-Markup-Language" />
+                <label for="HyperText-Markup-Language">HyperText Markup Language</label> <br />
+                <input type="radio" name="html" id="wronghtml1" />
+                <label for="wronghtml1">HyperText Margin Language</label>
+            </fieldset>
+            <fieldset id="questao3" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 3</legend>
+                <p>Qual é o <strong>primeiro nome</strong> da conhecida pessoa, que foi homenageada ao seu sobrenome, <strong>Lovelace</strong>, dar nome à turma?</p>
+                <input type="radio" name="lovelace" id="Ada" />
+                <label for="Ada">Ada</label><br />
+                <input type="radio" name="lovelace" id="Hamilton" />
+                <label for="Hamilton">Hamilton</label><br />
+                <input type="radio" name="lovelace" id="Joana" />
+                <label for="Joana">Joana</label>
+            </fieldset>
+            <fieldset id="questao4" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 4</legend>
+                <p>Selecione as opções de <em>tags</em> já utilizadas no curso:</p>
+                <input type="checkbox" name="tags" id="div" value="div" />
+                <label for="div"><i>'div'</i> |</label>
+                <input type="checkbox" name="tags" id="h1" value="h1" />
+                <label for="h1"><i>'h1'</i> |</label>
+                <input type="checkbox" name="tags" id="h2" value="h2" />
+                <label for="h2"><i>'h2'</i> |</label>
+                <input type="checkbox" name="tags" id="b" value="b" />
+                <label for="b"><i>'b'</i> |</label>
+                <input type="checkbox" name="tags" id="br" value="br" />
+                <label for="br"><i>'br'</i> |</label>
+                <input type="checkbox" name="tags" id="hidden" value="hidden" />
+                <label for="hidden"><i>'hidden'</i> |</label>
+                <input type="checkbox" name="tags" id="title" value="title" />
+                <label for="title"><i>'title'</i> |</label>
+                <input type="checkbox" name="tags" id="html" value="html" />
+                <label for="html"><i>'html'</i> |</label>
+                <input type="checkbox" name="tags" id="body" value="body" />
+                <label for="body"><i>'body'</i> |</label>
+            </fieldset>
+            <fieldset id="questao5" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 5</legend>
+                <p>A quantos meses você está no projeto AlphaEdTech?</p>
+                <p>0<input type="range" name="rtempo" id="ctempo" value="0" min="0" max="18" oninput="rresult.value = rtempo.value" />18</p>
+                <p><input type="number" name="rresult" id="cresult" value="0" min="0" max="18" oninput="rtempo.value=rresult.value" /></p>
+            </fieldset>
+            <fieldset id="questao6" style="background-color: rgb(173, 173, 173); max-width: 45%; margin: 0px auto;">
+                <legend style="font-size: 18pt;">Questão 6</legend>
+                <p>Responda sabendo que as seguintes afirmações, relativas a um grupo de 9 amigos, são verdadeiras:</p>
+                <ul>
+                    <li>A idade de Marcos é a média aritmética das idades desse grupo.</li>
+                    <li>Pedro possui exatamente 4 amigos mais novos.</li>
+                    <li>Joaquim e José são os únicos amigos com a mesma idade.</li>
+                    <li>A soma das idades de todos é um número divisível por 9.</li>
+                    <li>O amigo de maior idade tem 4 anos a mais que o segundo amigo mais velho.</li>
+                </ul>
+                <p>É correto afirmar que:</p>
+                <input type="radio" name="logica-condicional" id="resp1" />
+                <label for="resp1">Marcos é mais velho que Pedro.</label><br />
+                <input type="radio" name="logica-condicional" id="resp2" />
+                <label for="resp2">Pedro é mais velho que Joaquim e José.</label><br />
+                <input type="radio" name="logica-condicional" id="resp3" />
+                <label for="resp3">Marcos é mais novo que Joaquim e José.</label><br />
+                <input type="radio" name="logica-condicional" id="resp4" />
+                <label for="resp4">Marcos tem idade igual à metade da soma das idades do mais velho e do mais novo.</label>
+            </fieldset>
+            <div class="button" style="max-width: 45%; margin: 0px auto;">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
+

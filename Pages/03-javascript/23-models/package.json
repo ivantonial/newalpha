@@ -1,0 +1,20 @@
+{
+  "name": "23-models",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop all",
+    "list": "pm2 list"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "pm2": "^5.1.2"
+  }
+}

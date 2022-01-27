@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trilha Alpha EdTech Canvas" />
+    <meta property="og:description" content="Exercícios da Alpha EdTech - canvas" />
+    <meta property="og:image" content="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F233338003_1474787772884019_855391963800207351_n.jpg%3Fccb%3D11-4%26oh%3D82579ee5aa63befe40e8568121373c24%26oe%3D616F117C&t=l&u=551239231360-1629409725%40g.us&i=1631229617&n=WdXBesqFkwDT%2F3E7zWPy27Uqj5EojK4u%2B38S%2B4ncvHc%3D" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+</head>
+<body onload="tree();">
+    <div>
+        <button><a href="/index.html">Voltar</a></button>
+    </div>
+    <main>
+        <br /><br /><br />
+        <canvas id="nomeImagem" width="1920" height="1080"></canvas>
+    </main>
+</body>
+<script>
+    var cvs = document.getElementById('nomeImagem');
+    var ctx = cvs.getContext('2d');
+
+    function tree(startX, startY, len, angle, branchWidth){
+        ctx.lineWidth = branchWidth;
+
+        ctx.strokeStyle = "green";
+        ctx.fillStyle = "green";
+
+        ctx.beginPath();
+        ctx.save();
+        
+        if(len < 15){
+            ctx.strokeStyle = "violet";
+            ctx.fillStyle = "violet";
+        }
+
+        ctx.translate(startX, startY);
+        ctx.rotate(angle * Math.PI/180);
+        ctx.moveTo(0,0);
+        ctx.lineTo(0,-len);
+        ctx.stroke();
+
+        if(len < 10){
+            ctx.restore();
+            return;
+        }
+
+        tree(0, -len, len*0.80, -15);
+        tree(0, -len, len*0.80, +15);
+
+        ctx.restore();
+    }
+    tree(960, 1080, 200, 0, 0.5)
+</script>    
+</html>

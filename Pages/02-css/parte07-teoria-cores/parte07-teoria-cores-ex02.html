@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria das cores</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trilha Alpha EdTech - Teoria das cores- Ex02" />
+    <meta property="og:description" content="Exercícios da Alpha EdTech - Teoria das cores- Ex02" />
+    <meta property="og:image" content="https://uploaddeimagens.com.br/images/003/489/369/full/pp.jfif?1634513477" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Pages/02-css/parte07-teoria-cores/parte07-teoria-cores-ex02.css">
+</head>
+
+<body>
+    <header>
+        <div id="voltar">
+            <button><a href="/index.html" class="botao">Voltar</a></button>
+        </div>
+    </header>
+    <main>
+        <h1>Teoria das cores</h1>
+        <article class="hexadecimais">
+            <h2>Cores Hexadecimais</h2>
+            <div class="paragrafo">
+                <p>
+                    Uma cor hexadecimal é especificada com: #RRGGBB, onde os inteiros hexadecimais RR (vermelho), GG
+                    (verde)
+                    e BB (azul) especificam os componentes da cor. Todos os valores devem estar entre 00 e FF.<br /><br />
+                </p>
+
+                <p>
+                    Por exemplo, o valor # 0000ff é processado como azul, porque o componente azul é definido com seu
+                    valor
+                    mais alto (ff) e os outros são definidos como 00.<br /><br />
+                </p>
+
+                <p>
+                    Uma cor hexadecimal é especificada com: #RRGGBB. Para adicionar transparência, adicione dois dígitos
+                    adicionais, ao final do código hexadecimal, entre 00 e FF.
+                </p>
+
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;Hexadecimal&nbsp;&nbsp;</h3>
+                <div class="hexadecimal">
+                </div>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;Hexadecimal c/ transparência&nbsp;&nbsp;</h3>
+                <div class="hexadecimal-c-transp">
+                </div>
+            </div>
+        </article>
+        <article class="rgb-rgba">
+            <h2>Cores RGB e RGBA</h2>
+            <div class="paragrafo">
+                <p>
+                    Um valor de cor RGB é especificado com a função rgb (), que tem a seguinte sintaxe: rgb (vermelho, verde, azul).<br /><br />
+                </p>
+
+                <p>
+                    Cada parâmetro (vermelho, verde e azul) define a intensidade da cor e pode ser um número inteiro
+                    entre 0 e 255 ou um valor percentual (de 0% a 100%).
+                    Por exemplo, o valor rgb (0,0,255) é renderizado como azul, porque o parâmetro azul é definido com
+                    seu valor mais alto (255) e os outros são definidos como 0.
+                    Além disso, os seguintes valores definem cores iguais: rgb (0,0,255) e rgb (0%, 0%, 100%).<br /><br />
+                </p>
+
+                <p>
+                    Os valores de cores RGBA são uma extensão dos valores de cores RGB com um canal alfa - que
+                    especifica a opacidade de uma cor.
+                    Um valor de cor RGBA é especificado com: rgba (vermelho, verde, azul, alfa). O parâmetro alfa é um
+                    número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco).
+                </p>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;RGB&nbsp;&nbsp;</h3>
+                <div class="rgb">
+                </div>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;RGBA&nbsp;&nbsp;</h3>
+                <div class="rgba">
+                </div>
+            </div>
+        </article>
+        <article class="hsl-hsla">
+            <h2>Cores HSL e HSLA</h2>
+            <div class="paragrafo">
+                <p>
+                    HSL (Hue, Saturation and Lightness).
+                </p>
+                <p>
+                    Um valor de cor HSL é especificado com: hsl (matiz, saturação, claridade).
+                    O matiz é um grau na roda de cores (de 0 a 360):
+                </p>
+                <p>
+                    0 (ou 360) é vermelho, 120 é verde,  240 é azul
+                </p>
+                <p>
+                    A saturação é um valor percentual: 100% é a cor total.
+                    A leveza também é uma porcentagem; 0% é escuro (preto) e 100% é branco.<br /><br />
+                </p>
+                <p>
+                    Os valores de cor HSLA são uma extensão dos valores de cor HSL com um canal alfa - que especifica a
+                    opacidade de uma cor.
+                </p>
+                <p>
+                    Um valor de cor HSLA é especificado com: hsla (matiz, saturação, luminosidade, alfa), onde o
+                    parâmetro alfa define a opacidade. O parâmetro alfa é um número entre 0,0 (totalmente transparente)
+                    e 1,0 (totalmente opaco).
+                </p>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;HSL&nbsp;&nbsp;</h3>
+                <div class="hsl">
+                </div>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;HSLA&nbsp;&nbsp;</h3>
+                <div class="hsla">
+                </div>
+            </div>
+        </article>
+        <article class="pre-browser-atual">
+            <h2>Cor predefinida pelo browser e cor atual do elemento</h2>
+            <div class="paragrafo">
+                <p>140 nomes de cores são predefinidos na especificação de cores HTML e CSS. <br /><br /></p>
+                <p>A palavra-chave currentcolor se refere ao valor da propriedade color de um elemento. </p>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;Predefinida pelo browser&nbsp;&nbsp;</h3>
+                <div class="pre-browser">
+                </div>
+            </div>
+            <div class="format">
+                <h3>&nbsp;&nbsp;Cor atual&nbsp;&nbsp;</h3>
+                <div class="cor-atual">
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

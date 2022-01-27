@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+
+body {
+    margin: 5rem 10rem;
+    background-color: antiquewhite;
+}
+
+img {
+    display: flex;
+    max-width: 200px;
+    border-color: rgba(255, 166, 0, 0.404);
+    border-style: solid;
+    border-width: 2px;
+    max-height: auto;
+}
+
+h1 {
+    background-color: rgb(190, 226, 255);
+    margin: 10rem auto 0;
+    max-width: 70%;
+    min-width: 30%;
+    align-items: center;
+    text-align: center;
+    border-bottom-style: double;
+    border-bottom-color: orange;
+    border-bottom-width: 15px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: rgb(62, 64, 187);
+}
+
+h2{
+    display: flex;
+    margin-bottom: 5px;
+    color:rgb(62, 64, 187);
+    text-decoration: 1px double underline orange;
+    align-self: center;
+}
+
+button {
+    border: dotted;
+    border-width: .2rem;
+    border-color: rgb(42, 159, 255);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.botao {
+    background-color: rgb(190, 226, 255);
+    border: none;
+    color: orange;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.botao:hover {
+    background-color: rgb(31, 154, 255);;
+    color: rgb(255, 232, 190);
+}
+
+.animals {
+    background-color: rgb(190, 226, 255);
+    width: 1500px;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-items: center;
+    flex-direction: column;
+}
+
+.three-foxes01 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    justify-content: center;
+    border-style: double;
+    flex-direction: column;
+}
+
+.three-foxes02 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.three-foxes03 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.three-foxes04 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.arctic {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.fennec {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+.bengal {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.pale {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.blanfords {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+.cape {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.corsac {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.ruppells {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.kit {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.tibetan-sand {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 202px;
+}
+
+.tibetan-sand > img, .tibetan-sand > h2 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.swift {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.three-dogs01 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    justify-content: space-around;
+    border-style: double;
+    flex-direction: column;
+}
+
+.three-dogs02 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.three-dogs03 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.three-dogs04 {
+    background-color: rgb(250, 213, 164);
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.afghan-hound {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.akita {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.basenji {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.beagle {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.boiadeiro-australiano {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 202px;
+}
+
+.boiadeiro-australiano > img, .boiadeiro-australiano > h2 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.border-collie {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.corgi {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+
+.husky-siberiano {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.golden-retriever {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.jack-russell {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 202px;
+}
+
+.jack-russell > img, .jack-russell > h2 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.pastor-alemao {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}
+
+.pastor-suico {
+    background-color: antiquewhite;
+    display: flex;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    align-self: center;
+    flex-direction: column;
+}

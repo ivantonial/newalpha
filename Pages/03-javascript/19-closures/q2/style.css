@@ -1,0 +1,47 @@
+/*
+font-family: 'McLaren', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.btn {
+    align-items: center;
+    text-align: center;
+}
+
+.btn button {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.btn button:hover {
+    background-color: aquamarine;
+}
+
+main {
+    max-width: 85%;
+    min-width: 360px;
+}

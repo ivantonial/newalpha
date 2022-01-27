@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 10em;
+    margin-right: 10em;
+    background-color: lightgoldenrodyellow;
+}
+
+ol, ul{
+    margin-left: 2.5em;
+}
+
+li {
+    margin: .2em 0;
+}
+
+li > a { 
+    /* background-color: rgba(255, 255, 224, 0.5); */
+    color:rgb(255, 0, 0);
+}
+
+li > a[href]:hover {
+    /* background-color: rgba(255, 255, 224, 0.8); */
+    color: rgb(33, 69, 109);
+}
+
+.introducao > p {
+    margin: 0.6em;
+}
+
+.counter-strike {
+    text-decoration: underline rgba(128, 0, 0, 0.8);
+    font-weight: bolder;
+}
+
+h1 {
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 38px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border-bottom-style: double;
+    border-bottom-color: coral;
+    border-bottom-width: 0.5em;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-image: linear-gradient(145deg, rgba(255, 0, 0, .2) 30%, rgba(252, 217, 102, 0.5) 96%);
+    /* background-color: rgba(252, 217, 102, 0.5); */
+}
+
+/* .introducao > p, .introducao > h2{
+    background-color: rgba(252, 217, 102, 0.616);
+} */
+
+.indice {
+    background-color: rgba(238, 162, 162, 0.2);
+    display: inline-block;
+    max-width: 20em;
+    min-height: 21em;
+    padding: 25px;
+    margin-top: 0px;
+    margin-left: 1em;
+    margin-bottom: 3em;
+    overflow: visible;
+    border-bottom: 1em double rgba(128, 0, 0, 0.8);
+    border-left-style: solid;
+    border-left-width: 0.5px;
+    border-left-color: rgba(196, 0, 0, 0.288);
+    border-top-style: dotted;
+    border-top-width: .5px;
+    border-top-color: rgba(196, 0, 0, 0.2);
+    border-right-style: groove;
+    border-right-width: .5px;
+    border-right-color: rgba(196, 0, 0, 0.2);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+.indice > h2 {
+    background-image: linear-gradient(145deg, rgba(255, 0, 0, .2) 30%, rgba(252, 217, 102, 0.5) 96%);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.5px;
+    border-radius: 5em;
+    border-color: rgba(128, 0, 0, 0.8);
+    border-style: dotted;
+    border-width: 0.5px;
+    max-width: 6em;
+    min-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.introducao {
+    background-color: rgba(238, 162, 162, 0.2);
+    display: inline-block;
+    max-width: 73em;
+    min-height: 21em;
+    margin-top: 0;
+    margin-left: 2.5em;
+    padding: 25px;
+    overflow: visible;
+    border-bottom: 1em double rgba(128, 0, 0, 0.8);
+    border-left-style: solid;
+    border-left-width: 0.5px;
+    border-left-color: rgba(196, 0, 0, 0.288);
+    border-top-style: dotted;
+    border-top-width: .5px;
+    border-top-color: rgba(196, 0, 0, 0.2);
+    border-right-style: groove;
+    border-right-width: .5px;
+    border-right-color: rgba(196, 0, 0, 0.2);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+.jogabilidade {
+    margin-top: 0;
+    margin-bottom: 5em;
+    padding: 25px;
+    background-color: rgba(238, 162, 162, 0.2);
+    overflow: visible;
+    min-height: 21em;
+    border-bottom: 1em double rgba(128, 0, 0, 0.8);
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 2em;
+    border-right: 0.2em double rgba(128, 0, 0, 0.8);
+    border-top: 1em double rgba(128, 0, 0, 0.8);
+    border-top-right-radius: 5em;
+    border-top-left-radius: 2em;
+    border-left: 0.2em double rgba(128, 0, 0, 0.8);
+}
+
+.jogabilidade > h2, .introducao > h2 {
+    background-image: linear-gradient(145deg, rgba(255, 0, 0, .2) 30%, rgba(252, 217, 102, 0.5) 96%);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.5px;
+    border-radius: 5em;
+    border-color: rgba(128, 0, 0, 0.8);
+    border-style: dotted;
+    border-width: 0.5px;
+    max-width: 10em;
+    min-height: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.jogabilidade > h3 {
+    background-image: linear-gradient(145deg, rgba(50, 202, 139, 0.2) 30%, rgba(51, 102, 122, 0.5) 96%);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.5px;
+    border-radius: 5em;
+    border-color: rgba(128, 0, 0, 0.8);
+    border-style: dotted;
+    border-width: 0.5px;
+    max-width: 15em;
+    width: auto;
+    min-height: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.jogabilidade > p {
+    margin: 0.6em;
+}
+
+.armas-col01 {
+    display: inline-block;
+    align-items: center;
+    text-align: left;
+    margin: 0 0 0 22%;
+}
+
+.armas-col02 {
+    display: inline-block;
+    align-items: center;
+    text-align: left;
+    margin: 0 12% 0 12%;
+}
+
+.armas-col01 > h4 {
+    padding: 1.5em 0 0.5em 0;
+}
+
+.armas-col02 > h4 {
+    padding: 3em 0 1em 0;
+}

@@ -1,0 +1,23 @@
+body{
+    background-color:#ffe3b0;
+    text-align: center;
+}
+
+h1{
+    background-color: rgba(196, 58, 255, 0.3);
+    color:rgb(148, 24, 201);
+    border-bottom: thick double rgba(73, 0, 104, 0.6);
+    margin-top: 20px;
+}
+
+h2{
+    background-color: rgb(255, 194, 240);
+    color:#3c3d9b;
+    border-bottom:4mm ridge rgba(170,50,220, .6);
+}
+
+h3{
+    background-color: rgb(255, 194, 240);
+    color:#3c3d9b;
+    border-bottom: 2mm ridge rgba(207, 116, 247, 0.6);
+}

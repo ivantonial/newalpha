@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pesquisa Banco de Dados</h1>
+    </header>
+
+    <main>
+        <section class="form">
+            <div class="formOptions">
+                <label for="options">Escolha a opção: </label>
+                <select name="options" id="selectType" onchange="placeholderChanger()">
+                    <option value="id">ID</option>
+                    <option value="name">Nome</option>
+                    <option value="email">E-mail</option>
+                </select>
+                <div class="inputOptions">
+                    <input id="searchSpace" placeholder="ex: 17" size="8" autocomplete="off" />
+                    <div id="selector">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <p>Id: </p>
+            <input id="id" />
+            <p>Email: </p>
+            <input id="email" />
+            <p>Name: </p>
+            <input id="name" /> -->
+
+            <br />
+            <button type="button" id="searchBtn" onclick="dispararPedido()">Pesquisar</button>
+        </section>
+
+        <section id="information" class="information">
+            <table>
+                <thead>
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Email</td>
+                </thead>
+                <tbody id="content"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

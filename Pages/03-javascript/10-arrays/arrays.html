@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - calculator" />
+    <meta property="og:description" content="Estudo de Operações Matemáticas - Calculadora simples" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Arrays</h1>
+        <p>Passe valores para o array</p>
+    </header>
+
+    <main>
+        <section class="memory">
+            <div class="memoryValue">
+                <h2 class="memoTitle">Memoria 01</h2>
+                <span id="memo01" class="memorySpan"></span>
+            </div>
+            <div class="memoryValue">
+                <h2 class="memoTitle">Memoria 02</h2>
+                <span id="memo02" class="memorySpan"></span>
+            </div>
+            <div class="memoryValue">
+                <h2 class="memoTitle">Memoria 03</h2>
+                <span id="memo03" class="memorySpan"></span>
+            </div>
+            <div class="memoryValue">
+                <h2 class="memoTitle">Memoria 04</h2>
+                <span id="memo04" class="memorySpan"></span>
+            </div>
+        </section>
+        <section class="arrayInception">
+            <div class="values">
+                <label for="numberOne">1º valor (0 - 100)</label>
+                <input type="number" id="value01" name="inception" min="0" max="100">
+            </div>
+            <div class="values">
+                <label for="numberOne">2º valor  (0 - 100)</label>
+                <input type="number" id="value02" name="inception" min="0" max="100">
+            </div>
+            <div class="values">
+                <label for="numberOne">3º valor  (0 - 100)</label>
+                <input type="number" id="value03" name="inception" min="0" max="100">
+            </div>
+            <div class="values">
+                <label for="numberOne">4º valor  (0 - 100)</label>
+                <input type="number" id="value04" name="inception" min="0" max="100">
+            </div>
+        </section>
+        <section class="functions">
+            <div class="solve">
+                <button type="button" onclick="saveMemo()">Salvar valores na Memória</button>
+            </div>
+            <div class="solve">
+                <button type="button" onclick="lolFunc()">Inverter ordem</button>
+            </div>
+            <div class="solve">
+                <button type="button" onclick="sortValues()">Ordenar valores</button>
+            </div>
+        </section>
+        <section class="results">
+            <div class="finalValues">
+                <p>Valores Ordenados:</p>
+                <p>[<span id="finalValue01"></span>,<span id="finalValue02"></span>,<span id="finalValue03"></span>,<span id="finalValue04"></span>]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+
+body {
+    margin: 5rem 10rem;
+    background-color: antiquewhite;
+}
+
+img {
+    display: flex;
+    max-width: 250px;
+    border-color: rgba(255, 166, 0, 0.404);
+    border-style: solid;
+    border-width: 2px;
+    max-height: auto;
+}
+
+h1 {
+    background-color: rgb(190, 226, 255);
+    margin: 10rem auto 0;
+    max-width: 70%;
+    min-width: 30%;
+    align-items: center;
+    text-align: center;
+    border-bottom-style: double;
+    border-bottom-color: orange;
+    border-bottom-width: 15px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: rgb(62, 64, 187);
+}
+
+
+h2 {
+    display: flex;
+    margin-bottom: 5px;
+    color:rgb(62, 64, 187);
+    text-decoration: 1px double underline orange;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+button {
+    border: dotted;
+    border-width: .2rem;
+    border-color: rgb(42, 159, 255);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.botao {
+    background-color: rgb(190, 226, 255);
+    border: none;
+    color: orange;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.botao:hover {
+    background-color: rgb(31, 154, 255);;
+    color: rgb(255, 232, 190);
+}
+
+/* .animals01 {
+    background-color: rgb(190, 226, 255);
+    height: 1100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    display: flex;
+    border-style: double;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.animals01 > * {
+    flex: 1 1 160px;
+    margin: 35px;
+} */
+
+.animals01 {
+    background-color: rgb(190, 226, 255);
+    height: 1100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    display: flex;
+    border-style: double;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.box > *{
+    flex: 1 1 160px;
+    margin: 30px;
+}
+
+.animals02 {
+    background-color: rgb(190, 226, 255);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: rgba(62, 64, 187, .41);
+    border-left-width: 1px;
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-style: double;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.animals02 > * {
+    flex: 0 0 33.3333%;
+}
+
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: rgb(31, 154, 255);
+    background-color: antiquewhite;
+}
+
+.test:hover {
+    background-color: rgb(250, 204, 144);
+}

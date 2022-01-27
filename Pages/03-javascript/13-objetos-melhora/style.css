@@ -1,0 +1,135 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'McLaren', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+@font-face { 
+    font-family: "Proxima-N-W01-Reg"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg"); 
+    font-display: block; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive; 
+}
+
+body {
+    background-image: url(assets/images/maxresdefault.jpg);
+    background-size: 100%;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(250, 235, 215, 0.5);
+    text-decoration: underline double 10px rgb(225, 233, 78);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divChoice, .raceResults, .playersStatus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3vw;
+    padding-left: 3vw;
+}
+
+.choice h2, .choice form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.9);
+    padding: 15px;
+    max-width: 30%;
+    min-width: 300px;
+    border-radius: 15px;
+    border-color: rgb(183, 192, 5);
+    border-style: double;
+    border-width: 5px;
+}
+
+#raceButton {
+    margin-top: 1vw;
+    padding: 0.5vw 1vw;
+    border-color: rgb(218, 230, 6);
+    border-radius: 15px;
+    border-width: 3px;
+    background-color: rgba(250, 235, 215, 0.9);
+    font-weight: 600;
+}
+
+#raceButton:hover {
+    background-color: rgba(199, 125, 42, 0.9);
+    border-color: rgb(123, 129, 8);
+    color: rgb(238, 245, 117);
+}
+
+.divResult, .initialCars {
+    visibility: hidden;
+}
+
+.cars p, .initialCars p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(215, 215, 250, 0.938);
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 30%;
+    min-width: 300px;
+    border-radius: 15px;
+    border-color: rgb(171, 54, 218);
+    border-style: double;
+    border-width: 5px;
+}
+
+#playersInitialStatus, #playersFinalStatus {
+    text-align: center;
+    background-color: rgba(225, 250, 215, 0.938);
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 30%;
+    min-width: 300px;
+    border-radius: 15px;
+    border-color: rgb(46, 209, 31);
+    border-style: double;
+    border-width: 5px;
+}
+
+.cars {
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.raceResults {
+    padding-top: 3vw;
+}
+
+.divResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(225, 250, 215, 0.938);
+    padding: 15px;
+    max-width: 30%;
+    min-width: 300px;
+    border-radius: 15px;
+    border-color: rgb(46, 209, 31);
+    border-style: double;
+    border-width: 5px;
+}
+

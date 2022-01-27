@@ -1,0 +1,64 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'McLaren', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+@font-face { 
+    font-family: "Proxima-N-W01-Reg"; 
+    src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"), 
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg"); 
+    font-display: block; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive; 
+}
+
+body {
+    background-image: url(assets/images/maxresdefault.jpg);
+    background-size: 100%;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(250, 235, 215, 0.5);
+    text-decoration: underline double 10px rgb(225, 233, 78);
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 150px;
+}
+
+.choice h2, .choice form, .divResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.9);
+    padding: 15px;
+    max-width: 30%;
+    border-radius: 15px;
+    border-color: rgb(183, 192, 5);
+    border-style: double;
+    border-width: 5px;
+}
+
+#raceButton {
+    margin-top: 1vw;
+}
+
+.divResult {
+    visibility: hidden;
+}

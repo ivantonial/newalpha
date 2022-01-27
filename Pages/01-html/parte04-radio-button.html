@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Escolha</title>
+    </head>
+    <body>
+        <div>
+            <button><a href="/index.html">Voltar</a></button>
+        </div>
+        <form action="Escolha-de-mascote" method="POST">
+            <p>Escolha de mascote. Qual você prefere?</p>
+            <div>
+                <input type="radio" id="Raposa" name="mascote" value="Raposa" />
+                <label for="Raposa">Raposa</label> <br />
+                <input type="radio" id="Furão" name="mascote" value="Furão" />
+                <label for="Furão">Furão</label> <br />
+                <input type="radio" id="Urubu" name="mascote" value="Urubu" />
+                <label for="Urubu">Urubu</label> <br />
+                <input type="radio" id="Tiê-sangue" name="mascote" value="Tiê-sangue" />
+                <label for="Tiê-sangue">Tiê-sangue</label> <br />
+                <input type="radio" id="Dragão" name="mascote" value="Dragão" />
+                <label for="Dragão">Dragão</label> <br />
+                <input type="radio" id="sugestao" name="mascote" value="sugestao" />
+                <label for="sugestao">sugestão: <textarea name="sugestao" id="sugestao" cols="30" rows="1">Entre com uma sugestão</textarea></label>
+            </div>
+            <div class="button">
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar escolha</button>
+            </div>
+        </form>
+    </body>
+</html>

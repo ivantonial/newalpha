@@ -1,0 +1,927 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.header01 {
+    display: flex;
+    width: 100%;
+    height: 5.5vh;
+    background-color: rgb(1,128,137);
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.divHeader01Svg {
+    display: flex;
+}
+
+.divHeader01Svg a {
+    text-decoration: none;
+}
+
+.header01 svg {
+    width: 17px;
+}
+
+.spanHeader01 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header02 {
+    display: flex;
+    width: 100%;
+    height: 11vh;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 3vw;
+    border-bottom: 1px;
+    border-bottom-color: rgb(189, 189, 189);
+    border-bottom-style: solid;
+}
+
+.header02TitleMimus {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.header02Esquerda {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.logoMimus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.titleSubtitleMimus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.divTitle {
+    block-size: 50px;
+}
+
+.titleMimus{
+    color: rgb(206, 100, 0);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.titleSubtitle {
+    margin-top: 2px;
+    font-size: .833vw;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+
+.divSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#txtSearch {
+    padding: 0;
+    margin-bottom: 3px;
+    height: 25px;
+    max-width: 150px;
+}
+
+#searchButton {
+    border: none;
+    padding: 0;
+    margin-right: 2vw;
+    background: none;
+}
+
+.divCall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(206, 100, 0);
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.divLigue {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.navMenuHeader03 ul, .navMenuHeader03 .menuSocial, .navMenuHeader03 .loginButton, .navMenuHeader03 .cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.menusHeader03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header03 {
+    background-color: white;
+}
+
+.menuSections ul li {
+    padding-left: 28px;
+}
+
+.menusHeader03 ul li {
+    display: block;
+}
+
+.menusHeader03 ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+.menusHeader03 ul li a:hover{
+    color: rgb(206, 100, 0);
+}
+
+.loginButton, .cartIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociaisHeader03 ul li {
+    padding-left: 10px;
+}
+
+.sociaisHeader03 ul li a svg {
+    width: 20px;
+}
+
+#loginButton {
+    margin-left: 15px;
+    background: none;
+    border: none;
+}
+
+.cart Button {
+    margin-left: 10px;
+    width: 60px;
+    background: none;
+    border: none;
+}
+
+.cart Button a, #loginButton a {
+    text-decoration: none;
+}
+
+.cartNumber {
+    color: white;
+    margin-left: -18px;
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.noSpace {
+    width: 100%;
+}
+
+.banner {
+    display: contents;
+    width: 100%;
+}
+
+.boxBanner {
+    display: flex;
+    flex-direction: column; 
+    background-image: url("https://static.wixstatic.com/media/82fcd3_671de42e3d2a4a07be822489aca1f40d~mv2.jpg/v1/fill/w_1903,h_535,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_671de42e3d2a4a07be822489aca1f40d~mv2.webp");
+    background-repeat: no-repeat;
+    width: 1903px;
+    height: 535px;
+}
+
+.bannerBoxTitle {
+    width: 350px;
+    background-color: rgba(255, 255, 255, .8);
+    margin-left: 28%;
+    margin-top: 5%;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.bannerBoxTitle button {
+    background-color: rgb(206, 100, 0);
+    border: none;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+.bannerBoxTitle button:hover {
+    background-color: white;
+    border: none;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(206, 100, 0);
+}
+
+.bannerBoxTitle h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.buttonBannerBox {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.bannerBoxTitle button a {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.bannerBoxTitle button a:hover {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(206, 100, 0);
+}
+
+.infoLoja {
+    width: 100%;
+    height: 250px;
+}
+
+.spacesInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 62.5px 3vw 0px 0vw;
+    padding: 0px 3vw 0px 3vw;
+}
+
+.infoSVG, .infoSVGFrete, .infoSVGLocal, .infoSVGPag, .infoSVGSeg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    align-items: center;
+    margin-left: 3vw;
+    width: 350px;
+    height: 175px;
+    background-color: rgba(216, 216, 216, 0.15);
+
+}
+
+.infoSVGFrete svg {
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+    margin-bottom: -8px;
+}
+
+.infoSVGLocal svg {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.infoSVGPag svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.infoSVGSeg svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.descCaesGatos {
+    width: 100%;
+}
+
+.spacesCaesGatos, .spacesPassarosPeixes, .spacesPequeninosRepteis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+.boxMin {
+    background-image: url("https://static.wixstatic.com/media/82fcd3_8d5625845a1d4676b50d97368cf8050e~mv2_d_1735_2000_s_2.jpg/v1/fill/w_371,h_401,al_c,q_80,usm_0.66_1.00_0.01/82fcd3_8d5625845a1d4676b50d97368cf8050e~mv2_d_1735_2000_s_2.webp");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    margin-top: -45px;
+}
+
+.colorCaesGatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 132, 13, 0.75);
+    width: 350px;
+    height: 100%;
+}
+
+.colorCaesGatos h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.colorCaesGatos span {
+    color: white;
+    margin-left: -70px;
+    text-align: left;
+} 
+
+.colorCaesGatos #traco {
+    align-items: left;
+}
+
+.boxMed, .boxBig, .boxSmall {
+    margin-left: 3vw;
+}
+
+.colorCaesGatos p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.colorCaesGatos button, .passaros button, .peixes button, .pequeninos button, .repteis button {
+    background-color: rgb(206, 100, 0);
+    border: none;
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+}
+
+.colorCaesGatos button a, .dogs button a, .cats button a, .passaros button a, .peixes button a, .pequeninos button a, .repteis button a {
+    color: white;
+    text-decoration: none;
+}
+
+.colorCaesGatos button:hover, .dogs button:hover, .cats button:hover {
+    background-color: white;
+    border: none;
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(206, 100, 0);
+}
+
+.colorCaesGatos button a:hover, .dogs button a:hover, .cats button a:hover, .passaros button a:hover, .peixes button a:hover, .pequeninos button a:hover, .repteis button a:hover {
+    color: rgb(206, 100, 0);
+    text-decoration: none;
+}
+
+.dogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_8e5daf6e362d432f9f34ff70780c6752~mv2_d_5509_4000_s_4_2.jpg/v1/fill/w_642,h_401,al_t,q_80,usm_0.66_1.00_0.01/82fcd3_8e5daf6e362d432f9f34ff70780c6752~mv2_d_5509_4000_s_4_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 645px;
+    height: 450px;
+}
+
+.cats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_97259c1aab9e4a9d9d9a6d33896ba1ec~mv2_d_3745_2492_s_4_2.jpg/v1/fill/w_552,h_401,al_c,q_80,usm_0.66_1.00_0.01/82fcd3_97259c1aab9e4a9d9d9a6d33896ba1ec~mv2_d_3745_2492_s_4_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    padding-left: 0px;
+    width: 555px;
+    height: 450px;
+}
+
+.dogs h2, .cats h2 {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 95px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.dogs button, .cats button{
+    background-color: rgb(206, 100, 0);
+    border: none;
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+.dogs p, .cats p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: .9;
+}
+
+.spacesPassarosPeixes, .spacesPequeninosRepteis {
+    margin-top: 6vh;
+}
+
+.passaros button:hover, .peixes button:hover, .pequeninos button:hover, .repteis button:hover {
+    background-color: white;
+    border: none;
+    margin-top: 60px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(206, 100, 0);
+}
+
+.passaros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_2832171e379d4408bd00c5e72c89eff7~mv2_d_2000_1424_s_2.jpg/v1/fill/w_545,h_420,al_c,q_80,usm_0.66_1.00_0.01/82fcd3_2832171e379d4408bd00c5e72c89eff7~mv2_d_2000_1424_s_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 540px;
+    height: 450px;
+}
+
+.peixes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_6d3863ca538744b0b97b69aeecef5137~mv2_d_5800_3800_s_4_2.jpg/v1/fill/w_1066,h_420,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_6d3863ca538744b0b97b69aeecef5137~mv2_d_5800_3800_s_4_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1055px;
+    height: 450px;
+}
+
+.passaros p, .peixes p, .pequeninos p, .repteis p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: .9;
+}
+
+.passaros button, .peixes button, .pequeninos button, .repteis button{
+    background-color: rgb(206, 100, 0);
+    border: none;
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+}
+
+.passaros h2, .peixes h2, .pequeninos h2, .repteis h2 {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 95px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.pequeninos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_65895508ea904ecb85468599bf550e60~mv2_d_6741_2683_s_4_2.jpg/v1/fill/w_1065,h_420,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_65895508ea904ecb85468599bf550e60~mv2_d_6741_2683_s_4_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1050px;
+    height: 450px;
+}
+
+.repteis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(https://static.wixstatic.com/media/82fcd3_b0859172cf504ad3b7dfcdad97f6e9a3~mv2_d_4256_2832_s_4_2.jpg/v1/fill/w_548,h_420,al_c,q_80,usm_0.66_1.00_0.01/82fcd3_b0859172cf504ad3b7dfcdad97f6e9a3~mv2_d_4256_2832_s_4_2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 540px;
+    height: 450px;
+}
+
+.spacesProdut {
+    margin-top: 6vh;
+    border-top: 1px solid black;
+}
+
+.spacesProdut h2 {
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 65px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(206, 100, 0);
+    font-weight: 600;
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.prodLinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 6vh;
+}
+
+.adicionarCarrinho, .qtd {
+    margin-top: 10px;
+}
+
+.adicionarCarrinho button a{
+    text-decoration: none;
+    color: white;
+}
+
+.adicionarCarrinho button{
+    border: 1px solid gray;
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 30px;
+}
+
+.adicionarCarrinho button:hover{
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
+    width: 300px;
+    height: 30px;
+}
+
+.boxProdutos, .photoDescrip, .boxProdutos2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxProdutos2 {
+    margin-left: 2vw;
+}
+
+.precoPromo{
+    display: flex;
+    flex-direction: row;
+}
+
+.qtd1 {
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+.verMais {
+    text-align: center;
+}
+
+.verMais button {
+    background-color: rgb(206, 100, 0);
+    border: none;
+    margin-top: 60px;
+    width: 200px;
+    height: 40px;
+}
+
+.verMais button a{
+    text-decoration: none;
+    color: white;
+}
+
+.verMais button a:hover{
+    text-decoration: none;
+    color: rgb(206, 100, 0);
+}
+
+.verMais button:hover {
+    background-color: white;
+    border: none;
+    margin-top: 60px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(206, 100, 0);
+}
+
+.photo img {
+    width: 300px;
+}
+
+.titleMarcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(206, 100, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 200px;
+    background-color: rgba(221, 221, 221, 0.378);
+}
+
+footer{
+    width: 100%;
+}
+
+.spacesFig {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: rgba(221, 221, 221, 0.378);
+}
+
+
+
+.menuFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgb(206, 100, 0);
+}
+
+.lojaPrinc, .loja, .detalhes, .dicasOfertas{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.loja {
+    margin-top: 35px;
+}
+
+.detalhes {
+    margin-top: 20px;
+}
+
+.dicasOfertas {
+    margin-top: 20px;
+}
+
+.lojaPrincTitle, .lojaTitle, .detalhesTitle, .dicasOfertasTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lojaPrincCorpo p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 8px;
+}
+
+.lojaPrincCorpo p a {
+    color: white;
+}
+
+.itensFooter p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 6px;
+}
+
+.itensFooter p a {
+    text-decoration: none;
+    color: white;
+}
+
+#Email {
+    background-color: rgb(206, 100, 0);
+    border: 2px solid white;
+    margin-top: 15px;
+    height: 35px;
+    width: 300px;
+}
+
+#Email:hover {
+    background-color: rgb(206, 100, 0);
+    border: 3px solid white;
+    margin-top: 15px;
+    height: 35px;
+    width: 300px;
+}
+
+.dicasOfertas button {
+    color: rgb(206, 100, 0);
+    background-color: white;
+    border: 2px solid white;
+    margin-top: 5px;
+    height: 35px;
+    width: 300px;
+    font-weight: 300;
+}
+
+.dicasOfertas button:hover {
+    color: white;
+    font-weight: 300;
+    background-color: rgb(206, 100, 0);
+    border: 2px solid white;
+    margin-top: 5px;
+    height: 35px;
+    width: 300px;
+}
+
+.finalFooter {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 150px;
+}
+
+.junteTitle {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+}
+
+.junteInform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-right: 5vw;
+}
+
+.junteSocial ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.mimusCopy, .dadosMimus, .secureInfo {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.junteSocial ul li a svg {
+    height: 18px;
+}
+
+.spaceSocialFooter {
+    margin-left: 20px;
+}
+
+.dadosMimus {
+    margin-right: 10vw;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.secure {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7vw;
+}
+
+.secureTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+}
+
+.secureTitle svg {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.secureInfo {
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.pagTitle {
+    margin-top: 10px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+}
+
+.pagPhoto {
+    margin-top: 10px;
+}

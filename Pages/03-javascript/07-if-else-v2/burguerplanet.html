@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/fast-food.png" type="image/x-icon">
+    <title>Burguer Planet</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Javascript - calculator" />
+    <meta property="og:description" content="Estudo de Operações Matemáticas - Calculadora simples" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="titles">
+            <h1 class="title">Buger Planet</h1>
+            <p class="subTitle">Chef: Ivan Ramalho Tonial</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="instContainer">
+            <p class="instructions">O hamburger deve ser montado com a escolha de um tipo de pão, um tipo de carne, um
+                tipo de salada e um tipo de queijo desejado!! Vamos lá?!</p>
+        </div>
+        <div class="burgerConfig">
+            <form>
+                <div class="burger">
+                    <p class="information">Escolha o tipo de Pão:</p>
+                    <input type="radio" style="text-align: center;" id="frances" name="bread" class="bread"
+                        value="Francês 3.00" />
+                    <label for="frances">Pão Francês - R$ 3,00</label>
+                    <input type="radio" style="text-align: center;" id="australiano" name="bread" class="bread"
+                        value="Australiano 8.00" />
+                    <label for="australiano">Pão Australiano - R$ 8,00</label>
+                    <input type="radio" style="text-align: center;" id="brioche" name="bread" class="bread"
+                        value="Brioche 6.00" />
+                    <label for="brioche">Pão de Brioche - R$ 6,00</label>
+                </div>
+                <div class="meat">
+                    <p class="information">Escolha o tipo de Hamburger:</p>
+                    <input type="radio" style="text-align: center;" id="picanha" name="burger" class="burger"
+                        value="Picanha 13.00" />
+                    <label for="picanha">Haburger de picanha - R$ 13,00</label>
+                    <input type="radio" style="text-align: center;" id="costela" name="burger" class="burger"
+                        value="Costela 10.00" />
+                    <label for="costela">Hamburger de costela - R$ 10,00</label>
+                    <input type="radio" style="text-align: center;" id="vegano" name="burger" class="burger"
+                        value="Vegano 12.00" />
+                    <label for="vegano">Hamburger vegano - R$ 12,00</label>
+                </div>
+                <div class="salad">
+                    <p class="information">Escolha a salada do Hamburger:</p>
+                    <input type="radio" style="text-align: center;" id="alface" name="salad" class="salad"
+                        value="Alface 1.50" />
+                    <label for="alface">Alface - R$ 1,50</label>
+                    <input type="radio" style="text-align: center;" id="tomate" name="salad" class="salad"
+                        value="Tomate 1.50" />
+                    <label for="tomate">Tomate - R$ 1,50</label>
+                    <input type="radio" style="text-align: center;" id="noSalad" name="salad" class="salad"
+                        value="NA 0.00" />
+                    <label for="noSalad">Sem salada - R$ 0,00</label>
+                </div>
+                <div class="cheese">
+                    <p class="information">Escolha o tipo de Queijo:</p>
+                    <input type="radio" style="text-align: center;" id="Mussarela" name="cheese" class="cheese"
+                        value="Mussarela 3.00" />
+                    <label for="Mussarela">Queijo Mussarela - R$ 3,00</label>
+                    <input type="radio" style="text-align: center;" id="Prato" name="cheese" class="cheese"
+                        value="Prato 3.00" />
+                    <label for="Prato">Queijo Prato - R$ 3,00</label>
+                    <input type="radio" style="text-align: center;" id="Cheddar" name="cheese" class="cheese"
+                        value="Cheddar 5.00" />
+                    <label for="Cheddar">Queijo Cheddar - R$ 5,00</label>
+                </div>
+            </form>
+            <button type="button" class="submits" onclick="submit()">Enviar</button>
+        </div>
+        <div id="burgerResult" class="burgerResult">
+            <div class="finalBurger">
+                <div class="breadFinal">
+                    <p id="breadType"></p>
+                    <p id="priceBread"></p>
+                </div>
+                <div class="meatFinal">
+                    <p id="meatType"></p>
+                    <p id="priceMeat"></p>
+                </div>
+                <div class="saladFinal">
+                    <p id="saladType"></p>
+                    <p id="priceSalad"></p>
+                </div>
+                <div class="cheeseFinal">
+                    <p id="cheeseType"></p>
+                    <p id="priceCheese"></p>
+                </div>
+            </div>
+            <div class="price">
+                <p id="finalPrice"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
