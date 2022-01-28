@@ -1,34 +1,37 @@
-class Calculator {
-    operand1 = '';
-    operand2 = '';
-    operation = '';
-    result = '';
+function calculator() {
 
-    setOperand1(_operand1) {
-        this.operand1 += _operand1;
-    }
+    return {
+        operand1 : '',
+        operand2 : '',
+        operation : '',
+        result : '',
+
+        setOperand1(_operand1) {
+            this.operand1 += _operand1;
+        },
 
     setOperand2(_operand2) {
-        this.operand2 += _operand2;
-    }
+            this.operand2 += _operand2;
+        },
 
     setOperation(_operation) {
-        this.operation = _operation;
-    }
+            this.operation = _operation;
+        },
 
     getResult() {
-        calculateResult();
-    }
+            calculateResult();
+        },
 
     clearCalculator() {
-        this.operand1 = '';
-        this.operand2 = '';
-        this.operation = '';
-        this.result = '';
+            this.operand1 = '';
+            this.operand2 = '';
+            this.operation = '';
+            this.result = '';
+        },
     }
 }
 
-const calc = new Calculator;
+const calc = calculator();
 
 const clickCalc = document.getElementById("idBtns");
 clickCalc.addEventListener("click", clicked);
@@ -40,7 +43,7 @@ function clicked(_element) {
     switch (element.className) {
         case 'numb':
             numbSelector(element);
-            
+
             break;
 
         case 'numb numb0':
@@ -92,23 +95,23 @@ function calculateResult() {
         clearCalculator();
         displayInfo.innerHTML = "¯\\_(ツ)_/¯";
     }
-    else if(calc.operation === `/`) {
+    else if (calc.operation === `/`) {
         calc.result = Number(calc.operand1) / Number(calc.operand2);
         displayInfo.innerHTML = calc.result;
     }
-    else if(calc.operation === `*`) {
+    else if (calc.operation === `*`) {
         calc.result = Number(calc.operand1) * Number(calc.operand2);
         displayInfo.innerHTML = calc.result;
     }
-    else if(calc.operation === `-`) {
+    else if (calc.operation === `-`) {
         calc.result = Number(calc.operand1) - Number(calc.operand2);
         displayInfo.innerHTML = calc.result;
     }
-    else if(calc.operation === `+`) {
+    else if (calc.operation === `+`) {
         calc.result = Number(calc.operand1) + Number(calc.operand2);
         displayInfo.innerHTML = calc.result;
     }
-    
+
 }
 
 function setOperationSignal(_element) {
