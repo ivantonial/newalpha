@@ -12,7 +12,7 @@ font-family: 'McLaren', cursive;
     font-family: 'McLaren', cursive;
 }
 
-#searchBtn, #registerBtn, #deleteBtn, #changeBtn {
+#searchBtn, #registerBtn {
     padding: 1px 10px;
     border-radius: 10px;
     background-color: antiquewhite;
@@ -20,7 +20,7 @@ font-family: 'McLaren', cursive;
     margin-bottom: 10px;
 }
 
-#searchBtn:hover, #registerBtn:hover, #deleteBtn:hover, #changeBtn:hover {
+#searchBtn:hover, #registerBtn:hover {
     background-color: aquamarine;
 }
 
@@ -51,7 +51,7 @@ main {
     flex-direction: column;
 }
 
-.formOptions {
+.formOptions, .formoptions2 {
     display: flex;
     justify-content: center;
 }
@@ -76,6 +76,7 @@ table {
     border: solid 2px black;
     background-color: antiquewhite;
     padding: 5px 15px;
+    text-align: center;
     text-align: center;
 }
 
@@ -104,18 +105,36 @@ th {
     max-height: 10vw;
 }
 
-.registerInputs input, .formOptions input {
-    border: solid 1px black;
-    border-radius: 5px;
-    align-self: flex-start;
-    margin-bottom: 5px;
-}
-
-.inputOptions {
+.registerData {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
 }
 
-#insertProduct, #changeProductItem, #changeProductId, #searchOrDeleteProduct {
-    width: 250px;
+.classRegister {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 5px;
+}
+
+.formRegister > .formOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchSpace {
+    visibility: hidden;
+}
+
+#searchSpace input:disabled{
+    background: #ccc;
+}
+
+.formRegister > .formOptions2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }

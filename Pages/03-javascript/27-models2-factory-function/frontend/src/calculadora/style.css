@@ -1,0 +1,85 @@
+/*
+font-family: 'McLaren', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+}
+
+header {
+    margin: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    min-width: 200px;
+    max-width: 10vw;
+    min-height: 50px;
+    background-color: wheat;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons .numb0 {
+    width: 92px;
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border-radius: 40px;
+}
+
+.numb, .dot {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.operationSignal, .equalSignal {
+    background-color: rgb(255, 148, 0);
+    color: white;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+}
+
+.otherOperations button {
+    background-color: rgb(211, 211, 211);
+}
+
+.border {
+    border: 2px solid rgb(167, 167, 167);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.operations button {
+    font-size: 20px;
+}
+
+#displayInfo {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
