@@ -19,7 +19,7 @@ function getZipCode() {
                     style="border:0"
                     loading="lazy"
                     allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDTqxnTg8xktF1jAigt3byQrPP77g-jiTU&q=${responseTop.lat}%2C${responseTop.lng}">
+                    src="https://maps.google.com/maps?q=${responseTop.cep}&t=&z=13&ie=UTF8&iwloc=&output=embed">
                 </iframe>`);
                 $('table').show();
                 $('#map').show();
