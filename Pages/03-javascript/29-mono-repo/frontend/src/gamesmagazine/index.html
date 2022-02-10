@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio de Games</title>
+    <meta property="og:title" content="Javascript - Trabalho JS C/ Servidor" />
+    <meta property="og:description" content="Trabalho JS C/ Servidor" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Portifólio de Games</h1>
+    </header>
+    <main>
+        <section class="gameRegister">
+            <div>
+                <label for="gameName">Nome do Jogo:</label>
+                <input type="text" name="gameName" id="gameName" />
+            </div>
+            <div>
+                <label for="gameReleaseYear">Ano de lançamento:</label>
+                <input type="text" name="gameReleaseYear" id="gameReleaseYear" />
+            </div>
+            <div>
+                <label for="gameGenre">Gênero do jogo:</label>
+                <select name="gameGenre" id="gameGenre">
+                    <option value="Action">Ação</option>
+                    <option value="Adventure">Aventura</option>
+                    <option value="Strategy">Estratégia</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Sports">Esportes</option>
+                    <option value="Race">Corrida</option>
+                    <option value="Others">Outros</option>
+                </select>
+            </div>
+            <div>
+                <label for="gameMultiplayer">Multiplayer:</label>
+                <input type="checkbox" name="gameMultiplayer" id="gameMultiplayer" />
+                <label for="gameOffline">Offline:</label>
+                <input type="checkbox" name="gameOffline" id="gameOffline" />
+                <label for="gameCrossPlataform">Multi-plataforma:</label>
+                <input type="checkbox" name="gameCrossPlataform" id="gameCrossPlataform" />
+            </div>
+            <div class="btn">
+                <input type="button" value="Cadastrar" id="registerBtn" />
+                <input type="button" value="Listar" id="searchBtn" />
+            </div>
+        </section>
+
+        <section class="tableCad">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jogo</th>
+                        <th>Ano</th>
+                        <th>Gênero</th>
+                        <th>Multiplayer</th>
+                        <th>Offline</th>
+                        <th>Crossplataform</th>
+                    </tr>
+                </thead>
+                <tbody id="content"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
