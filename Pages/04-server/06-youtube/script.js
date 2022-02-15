@@ -10,33 +10,33 @@ $(function () {
 });
 
 
-let videoID = ['THAUdRxNd-Y', 'Kp-sLOmeq9c', 'MOteQc3bNYI', 'uWydqDis4kc', 'sXFWj82s1WI'];
+let videoIDs = ['THAUdRxNd-Y', 'Kp-sLOmeq9c', 'MOteQc3bNYI', 'uWydqDis4kc', 'sXFWj82s1WI'];
 let player;
 
-function loadVideoTitle(_variable, _j) {
-    let player;
-    let tagInsert;
-    let j = _j;
-    let event = _variable;
-    tagInsert = '#tabs-' + j + 'a';
-    player = new YT.Player(event, {
-        height: '360',
-        width: '640',
-        videoId: videoID[j - 1],
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-    function onPlayerReady(_e) {
-        let data = player.getVideoData();
-        $(tagInsert).html(data.title);
-        player.destroy();
-    }
-}
+// function loadVideoTitle(_variable, _j) {
+//     let player;
+//     let tagInsert;
+//     let j = _j;
+//     let event = _variable;
+//     tagInsert = '#tabs-' + j + 'a';
+//     player = new YT.Player(event, {
+//         height: '360',
+//         width: '640',
+//         videoId: videoIDs[j - 1],
+//         events: {
+//             'onReady': onPlayerReady
+//         }
+//     });
+//     function onPlayerReady(_e) {
+//         let data = player.getVideoData();
+//         $(tagInsert).html(data.title);
+//         player.destroy();
+//     }
+// }
 
-for (let i = 1; i < 6; i++) {
-    loadVideoTitle('video' + i, i);
-}
+// for (let i = 1; i < 6; i++) {
+//     loadVideoTitle('video' + i, i);
+// }
 
 function addVideo(_event) {
     let event;
@@ -77,7 +77,7 @@ function addVideo(_event) {
         player = new YT.Player(event, {
             height: '360',
             width: '640',
-            videoId: videoID[i],
+            videoId: videoIDs[i],
             events: {
                 'onReady': onPlayerReady
             }
@@ -91,6 +91,7 @@ function addVideo(_event) {
             let data = player.getVideoData();
             let urlVideo = player.getVideoUrl();
             if (event === 'video1') {
+                $('tabs-1a').html(data.title)
                 $('#title01').html(data.title);
                 if (data.author === "") {
                     $('#author01').html("Informação não disponível");
@@ -101,6 +102,7 @@ function addVideo(_event) {
                 $('#videoID01').html(data.video_id);
                 $('#videoLink01').html(`<a href="${urlVideo}">${urlVideo}</a>`)
             } else if (event === 'video2') {
+                $('tabs-2a').html(data.title)
                 $('#title02').html(data.title);
                 if (data.author === "") {
                     $('#author02').html("Informação não disponível");
@@ -111,6 +113,7 @@ function addVideo(_event) {
                 $('#videoID02').html(data.video_id);
                 $('#videoLink02').html(`<a href="${urlVideo}">${urlVideo}</a>`)
             } else if (event === 'video3') {
+                $('tabs-3a').html(data.title)
                 $('#title03').html(data.title);
                 if (data.author === "") {
                     $('#author03').html("Informação não disponível");
@@ -121,6 +124,7 @@ function addVideo(_event) {
                 $('#videoID03').html(data.video_id);
                 $('#videoLink03').html(`<a href="${urlVideo}">${urlVideo}</a>`)
             } else if (event === 'video4') {
+                $('tabs-4a').html(data.title)
                 $('#title04').html(data.title);
                 if (data.author === "") {
                     $('#author04').html("Informação não disponível");
@@ -131,6 +135,7 @@ function addVideo(_event) {
                 $('#videoID04').html(data.video_id);
                 $('#videoLink04').html(`<a href="${urlVideo}">${urlVideo}</a>`);
             } else {
+                $('tabs-5a').html(data.title)
                 $('#title05').html(data.title);
                 if (data.author === "") {
                     $('#author05').html("Informação não disponível");
