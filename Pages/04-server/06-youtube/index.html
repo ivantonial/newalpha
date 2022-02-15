@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Videos</title>
+    <meta property="og:title" content="Tabs e Accordions" />
+    <meta property="og:description" content="Exercicio, adicionar video youtube com Tabs e Accordion" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81388283?v=4" />
+    <meta property="og:image:height" content="438.9" />
+    <meta property="og:image:width" content="auto" />
+    <meta property="og:article:author" content="Ivan Tonial" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Videos do youtube</h1>
+    </header>
+    <main>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1" id="tabs-1a" value="video1">Video 1</a></li>
+                <li><a href="#tabs-2" id="tabs-2a" value="video2">Video 2</a></li>
+                <li><a href="#tabs-3" id="tabs-3a" value="video3">Video 3</a></li>
+                <li><a href="#tabs-4" id="tabs-4a" value="video4">Video 4</a></li>
+                <li><a href="#tabs-5" id="tabs-5a" value="video5">Video 5</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div id="video1"></div>
+                <div id="accordion-1">
+                    <h3>Título</h3>
+                    <div class="accordionsConfg">
+                        <p id="title01"></p>
+                    </div>
+                    <h3>Autor</h3>
+                    <div class="accordionsConfg">
+                        <p id="author01"></p>
+                    </div>
+                    <h3>Duração</h3>
+                    <div class="accordionsConfg">
+                        <p id="duration01"></p>
+                    </div class="accordionsConfg">
+                    <h3>ID do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoID01"></p>
+                    </div>
+                    <h3>Link do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoLink01"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div id="video2"></div>
+                <div id="accordion-2">
+                    <h3>Título</h3>
+                    <div class="accordionsConfg">
+                        <p id="title02"></p>
+                    </div>
+                    <h3>Autor</h3>
+                    <div class="accordionsConfg">
+                        <p id="author02"></p>
+                    </div>
+                    <h3>Duração</h3>
+                    <div class="accordionsConfg">
+                        <p id="duration02"></p>
+                    </div>
+                    <h3>ID do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoID02"></p>
+                    </div>
+                    <h3>Link do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoLink02"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div id="video3"></div>
+                <div id="accordion-3">
+                    <h3>Título</h3>
+                    <div class="accordionsConfg">
+                        <p id="title03"></p>
+                    </div>
+                    <h3>Autor</h3>
+                    <div class="accordionsConfg">
+                        <p id="author03"></p>
+                    </div>
+                    <h3>Duração</h3>
+                    <div class="accordionsConfg">
+                        <p id="duration03"></p>
+                    </div>
+                    <h3>ID do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoID03"></p>
+                    </div>
+                    <h3>Link do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoLink03"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div id="video4"></div>
+                <div id="accordion-4">
+                    <h3>Título</h3>
+                    <div class="accordionsConfg">
+                        <p id="title04"></p>
+                    </div>
+                    <h3>Autor</h3>
+                    <div class="accordionsConfg">
+                        <p id="author04"></p>
+                    </div>
+                    <h3>Duração</h3>
+                    <div class="accordionsConfg">
+                        <p id="duration04"></p>
+                    </div>
+                    <h3>ID do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoID04"></p>
+                    </div>
+                    <h3>Link do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoLink04"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-5">
+                <div id="video5"></div>
+                <div id="accordion-5">
+                    <h3>Título</h3>
+                    <div class="accordionsConfg">
+                        <p id="title05"></p>
+                    </div>
+                    <h3>Autor</h3>
+                    <div class="accordionsConfg">
+                        <p id="author05"></p>
+                    </div>
+                    <h3>Duração</h3>
+                    <div class="accordionsConfg">
+                        <p id="duration05"></p>
+                    </div>
+                    <h3>ID do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoID05"></p>
+                    </div>
+                    <h3>Link do Vídeo</h3>
+                    <div class="accordionsConfg">
+                        <p id="videoLink05"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</body>
+
+</html>

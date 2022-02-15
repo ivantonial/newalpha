@@ -1,0 +1,61 @@
+/* 
+font-family: 'McLaren', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tabs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#tabs ul li {
+    min-width: 90px;
+    width: 5vw;
+    text-align: center;
+}
+
+#tabs-1, 
+#tabs-2,
+#tabs-3,
+#tabs-4,
+#tabs-5 {
+    max-height: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#accordion-1,
+#accordion-2,
+#accordion-3,
+#accordion-4,
+#accordion-5 {
+    margin-left: 10px;
+    width: 20vw;
+    min-width: 200px;
+}
+
+.accordionsConfg {
+    height: 200px;
+}
+
+ul li {
+    overflow: hidden;
+}
+
+
